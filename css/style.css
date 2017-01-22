@@ -1,0 +1,222 @@
+/**
+       * wenk - Lightweight pure CSS tooltip for the greater good
+       * @version v1.0.0
+       * (c) 2016 Tiaan du Plessis @mightyCrow |
+       * @link
+       * @license MIT
+       */
+       [data-wenk]{position:relative}[data-wenk]:after{position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);display:none;font-size:13px;border-radius:.4rem;content:attr(data-wenk);padding:12.8px;padding:.8rem;background-color:hsla(0,0%,7%,.8);box-shadow:0 0 14px rgba(0,0,0,.1);color:#fff;width:200px;line-height:20px;line-height:1.25rem;text-align:left;z-index:1;pointer-events:none;display:block;opacity:0;visibility:hidden;-webkit-transition:all .3s;transition:all .3s;bottom:100%;left:50%;-webkit-transform:translate(-50%,10px);transform:translate(-50%,10px)}[data-wenk]:hover{overflow:visible}[data-wenk]:hover:after{display:block;opacity:1;visibility:visible;-webkit-transform:translate(-50%,-10px);transform:translate(-50%,-10px)}[data-wenk].wenk--bottom:after,[data-wenk][data-wenk-pos=bottom]:after{bottom:auto;top:100%;left:50%;-webkit-transform:translate(-50%,-10px);transform:translate(-50%,-10px)}[data-wenk].wenk--bottom:hover:after,[data-wenk][data-wenk-pos=bottom]:hover:after{-webkit-transform:translate(-50%,10px);transform:translate(-50%,10px)}[data-wenk].wenk--left:after,[data-wenk][data-wenk-pos=left]:after{bottom:auto;left:auto;top:50%;right:100%;-webkit-transform:translate(10px,-50%);transform:translate(10px,-50%)}[data-wenk].wenk--left:hover:after,[data-wenk][data-wenk-pos=left]:hover:after{-webkit-transform:translate(-10px,-50%);transform:translate(-10px,-50%)}[data-wenk].wenk--right:after,[data-wenk][data-wenk-pos=right]:after{bottom:auto;top:50%;left:100%;-webkit-transform:translate(-10px,-50%);transform:translate(-10px,-50%)}[data-wenk].wenk--right:hover:after,[data-wenk][data-wenk-pos=right]:hover:after{-webkit-transform:translate(10px,-50%);transform:translate(10px,-50%)}[data-wenk].wenk-length--small:after,[data-wenk][data-wenk-length=small]:after{white-space:normal;width:80px}[data-wenk].wenk-length--medium:after,[data-wenk][data-wenk-length=medium]:after{white-space:normal;width:150px}[data-wenk].wenk-length--large:after,[data-wenk][data-wenk-length=large]:after{white-space:normal;width:260px}[data-wenk].wenk-length--fit:after,[data-wenk][data-wenk-length=fit]:after{white-space:normal;width:100%}
+
+
+       [data-wenk]:after{
+         height: 20px;
+         padding:5px;
+         bottom: 46px;
+         width: 70px;
+         font-family: helvetica;
+         text-align: center;
+         font-weight: lighter;
+         font-size: 14px;
+       }
+      body{
+        padding: 100px 0;
+        background-image: url("http://www.mattboldt.com/demos/typed-js/img/header-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+
+
+      h1{
+        font-size: 70px;
+        font-weight: lighter;
+        font-family: "Consolas", "Courier New", "Courier";
+        color: #efefef;
+        text-align: center;
+      }
+
+      .element{
+        font-size: 15px;
+      }
+
+      .terminal{
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -250px;
+        top: 150px;
+        transition: all 500ms ease;
+      }
+
+      .terminal .terminal-header{
+        padding: 5px 0 10px 0;
+        font-family: "Lucida Grande", sans-serif;
+        font-size: 0.75em;
+        text-align: center;
+        background-color: #f8f8f8;
+        box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+        border-bottom: #6a6a6a 1px solid;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 6px 9px 43px 0px #444;
+        cursor: pointer;
+      }
+
+      .terminal .terminal-header .active-button{
+        float: left;
+        text-align: left;
+        padding-left: 10px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+
+      .terminal .terminal-header .active-button>span{
+        border-radius: 50%;
+        cursor: pointer;
+        min-width: 18px;
+        display: inline-block;
+        min-height: 18px;
+        position: relative;
+      }
+
+      .terminal .terminal-header .active-button>span span{
+        position: absolute;
+        top: 1px;
+        left: 5px;
+      }
+
+      .terminal .terminal-header .active-button span.red{
+        background: #fc605b;
+      }
+
+      .terminal .terminal-header .active-button span.yellow{
+        background: #fdbc40;
+      }
+
+      .terminal .terminal-header .active-button span.green{
+        background: #33c748;
+        color: #333;
+      }
+
+      .terminal .terminal-body{
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 10px;
+        color: #6bee1c;
+        text-shadow: #000 0px 1px 0px;
+        font-family: "Consolas", "Courier New", "Courier";
+        font-size: 1.75em;
+        line-height: 1.40em;
+        font-weight: 500;
+        text-align: left;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 6px 9px 43px 0px #444;
+        position: absolute;
+        width: 97%;
+        padding: 0 8px;
+
+      }
+
+      .typed-cursor{
+        display: none;
+      }
+
+      .hide{
+        top: 100%;
+        left: 60%;
+        transform: scale(0.0);
+      }
+
+      @media (min-width: 900px) {
+        .hide{
+          left: 75%;
+        }
+      }
+
+      @media (min-width: 1400px) {
+        .hide{
+          left: 60%;
+        }
+      }
+
+      #draggable{
+        position: absolute !important;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+      }
+
+
+      .dock{
+        position: absolute;
+        width: 550px;
+        left: 50%;
+        margin-left: -275px;
+        height: 55px;
+        bottom: 0;
+        background: rgba( 0, 0, 0, 0.5 );
+        text-align: center;
+        border-radius: 3px 3px 0 0;
+        transition: all 250ms ease;
+      }
+
+      .dock a{
+        position: relative;
+        width: 45px;
+        height: 45px;
+        transition: all 250ms ease;
+        top: 0;
+        display: inline-block;
+      }
+
+
+
+      .dock a img{
+        width: 45px;
+        height: 45px;
+        height: auto;
+        padding-top: 5px;
+      }
+
+      .size .terminal-body{
+        width: 100%;
+        height: 100%;
+      }
+
+      .size .terminal-header{
+        border-radius: 0;
+      }
+
+      .size{
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: 9999;
+        margin-left: 0;
+      }
+
+      .close{
+        display: none;
+        opacity: 0;
+      }
+
+
+      .ui-widget-content{
+        border: 0;
+      }
+
+      #draggable{
+        border: 0;
+      }
