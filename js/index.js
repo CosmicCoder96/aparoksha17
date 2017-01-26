@@ -2,14 +2,22 @@
 
 
 $(function(){
-      $(".element").typed({
-        strings: ["$ npm install tilpark -g", "$ sudo install tilpark"],
+      $(".element-terminal").typed({
+        strings: ["$ npm install tilpark -g", "$ sudo install tilpark","$ preparations for apaaroksah done","$ about to launch ","......."],
         typeSpeed: 50
       });
-
+      $(".element-events").typed({
+        strings: ["$ Loading events..."],
+        typeSpeed: 50
+      });
+      $(".events").addClass("hide");
       $(".red").click(function(){
         $("#draggable").css({ "left": "0", "top": "0" })
         $(".terminal").addClass("close");
+      });
+      $(".red-events").click(function(){
+        $("#draggable").css({ "left": "0", "top": "0" })
+        $(".events").addClass("close");
       });
 
       $(".yellow").click(function(){
@@ -39,6 +47,11 @@ $(function(){
 
       $(".terminal-app").click(function(){
         $("#draggable").css({ "left": "0", "top": "0" })
+        if ( !$(".events").hasClass("hide") )
+        {
+          $(".events").addClass("hide");
+        } 
+        
         if ( $(".terminal").hasClass("hide") )
         {
           $(".terminal").removeClass("hide");
@@ -46,6 +59,23 @@ $(function(){
           $(".terminal").removeClass("close");
         } else {
           $(".terminal").addClass("hide");
+        }
+      });
+      $(".events-app").click(function(){
+        $("#draggable").css({ "left": "0", "top": "0" })
+        if ( !$(".terminal").hasClass("hide") )
+        {
+          $(".terminal").addClass("hide");
+        }
+        
+        if ( $(".events").hasClass("hide") )
+        {
+          $(".events").removeClass("hide");
+        } 
+        else if ( $(".events").hasClass("close") ) {
+          $(".events").removeClass("close");
+        } else {
+          $(".events").addClass("hide");
         }
       });
 
