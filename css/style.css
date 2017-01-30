@@ -1,3 +1,4 @@
+
 /**
        * wenk - Lightweight pure CSS tooltip for the greater good
        * @version v1.0.0
@@ -78,6 +79,17 @@
         transition: all 500ms ease;
       }
 
+      .gallery{
+        width: 800px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        margin-left: -350px;
+        top: 150px;
+        transition: all 500ms ease;
+      }
+
       .terminal .terminal-header{
         padding: 5px 0 10px 0;
         font-family: "Lucida Grande", sans-serif;
@@ -92,6 +104,18 @@
       }
 
       .events .events-header{
+        padding: 5px 0 10px 0;
+        font-family: "Lucida Grande", sans-serif;
+        font-size: 0.75em;
+        text-align: center;
+        background-color: #f8f8f8;
+        box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
+        border-bottom: #6a6a6a 1px solid;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 6px 9px 43px 0px #444;
+        cursor: pointer;
+      }
+      .gallery .gallery-header{
         padding: 5px 0 10px 0;
         font-family: "Lucida Grande", sans-serif;
         font-size: 0.75em;
@@ -118,6 +142,13 @@
         vertical-align: middle;
         display: inline-block;
       }
+      .gallery .gallery-header .active-button{
+        float: left;
+        text-align: left;
+        padding-left: 10px;
+        vertical-align: middle;
+        display: inline-block;
+      }
 
       .terminal .terminal-header .active-button>span{
         border-radius: 50%;
@@ -136,7 +167,14 @@
         min-height: 18px;
         position: relative;
       }
-
+      .gallery .gallery-header .active-button>span{
+        border-radius: 50%;
+        cursor: pointer;
+        min-width: 18px;
+        display: inline-block;
+        min-height: 18px;
+        position: relative;
+      }
       .terminal .terminal-header .active-button>span span{
         position: absolute;
         top: 1px;
@@ -144,6 +182,11 @@
       }
 
       .events .events-header .active-button>span span{
+        position: absolute;
+        top: 1px;
+        left: 5px;
+      }
+      .gallery .gallery-header .active-button>span span{
         position: absolute;
         top: 1px;
         left: 5px;
@@ -171,6 +214,18 @@
       }
 
       .events .events-header .active-button span.green-events{
+        background: #33c748;
+        color: #333;
+      }
+      .gallery .gallery-header .active-button span.red-gallery{
+        background: #fc605b;
+      }
+
+      .gallery .gallery-header .active-button span.yellow-gallery{
+        background: #fdbc40;
+      }
+
+      .gallery .gallery-header .active-button span.green-gallery{
         background: #33c748;
         color: #333;
       }
@@ -223,6 +278,29 @@
         width: 97%;
         padding: 0 8px;
 
+      }
+      .gallery .gallery-body{
+        height: 250px;
+        background-color: rgba(0, 255, 0,0);
+        padding: 10px;
+        color: black;
+        text-shadow: #000 0px 1px 0px;
+        font-family: "Consolas", "Courier New", "Courier";
+        font-size: 0.75em;
+        line-height: 1.40em;
+        font-weight: 500;
+        text-align: left;
+        overflow: hidden;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -ms-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 6px 9px 43px 0px #444;
+        position: absolute;
+        width: 97%;
+        padding: 0 8px;
       }
 
       .typed-cursor{
@@ -346,4 +424,248 @@
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+}
+.container {
+  width: 302px;
+  height: 302px;
+  margin: 0 auto;
+  top: calc(50% - 133px);
+  position: absolute;
+  left: calc(50% - 133px);
+}
+.hexagon {
+  position: absolute;
+  width: 94px;
+  height: 54.27px;
+  background-color: rgba(0, 224, 120, .5);
+  margin: 27.14px 0;
+  transform: rotate(90deg);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 47px solid transparent;
+  border-right: 47px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 27.14px solid rgba(0, 224, 120, .5);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 27.14px solid rgba(0, 224, 120, .5);
+}
+
+.hexagon.one {
+  top: 47px;
+  left: 18px;
+}
+
+.hexagon.two {
+  top: -2px;
+  left: calc(50% - 47px);
+}
+
+.hexagon.three {
+  left: calc(50% - 47px);
+  top: 97px;
+}
+
+.hexagon.four {
+  top: 47px;
+  right: 18px;
+}
+
+.hexagon.five {
+  top: initial;
+  bottom: 47px;
+  left: 18px;
+}
+
+.hexagon.six {
+  left: calc(50% - 47px);
+  bottom: -3px;
+}
+
+.hexagon.seven {
+  bottom: 47px;
+  top: inherit;
+  right: 18px;
+}
+
+.hex-row-wrapper {
+  position: absolute;
+  width: 302px;
+  height: 302px;
+  padding: 0px 0px 0px;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.hex-row {
+  width: 265px;
+  display: block;
+  position: absolute;
+  height: 94px;
+  /* margin: 5px auto 0px; */
+  width: 100%;
+  top: 0px;
+}
+
+.hex-row + .hex-row {
+  top: 98px;
+}
+
+.hex-row + .hex-row .hexagon.left {
+  top: -8px;
+  left: -35px;
+}
+
+.hex-row + .hex-row .hexagon.right {
+  right: -36px;
+  top: -8px;
+}
+
+.hex.even {
+  margin-top: 53px;
+}
+.activator{
+  position: absolute;
+  width: 94px;
+  height: 59.27px;
+  background-color: transparent;
+  margin: 27.14px 0;
+  border-left: solid 5px #000;
+  border-right: solid 5px #000;
+  transform: rotate(90deg);
+  bottom: -5px;
+  left: calc(50% - 53px);
+  display: block;
+}
+.activator:before,
+.activator:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 66.47px;
+  height: 66.47px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: transparent;
+  left: 9.766px;
+}
+
+.activator:before {
+  top: -37.234px;
+  border-top: solid 7.0711px #000;
+  border-right: solid 7.0711px #000;
+}
+
+.activator:after {
+  bottom: -36.234px;
+  border-bottom: solid 7.0711px #000;
+  border-left: solid 7.0711px #000;
+}
+
+.arrow-left {
+  width: 0px;
+  height: 0px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 9px solid #fff;
+  position: absolute;
+  left: 29px;
+  bottom: -18px;
+  opacity: .6;
+  z-index: 100;
+}
+
+.arrow-right {
+  width: 0px;
+  height: 0px;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 9px solid #fff;
+  opacity: .6;
+  left: 29px;
+  position: absolute;
+  top: -18px;
+  z-index: 100;
+}
+
+i.fa {
+  position: absolute;
+  font-size: 45px;
+  transform: rotate(-90deg);
+  top: 0px;
+  left: calc(50% - 26px);
+  transition: .3s;
+  z-index: 600;
+  color:rgba(0,0,0,.6);
+  display: none;
+}
+
+/*gallery*/
+.gallery-container{
+  margin: 4% auto;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  perspective: 1000px;
+}
+#carousel{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+  animation-play-state: paused;
+}
+#carousel figure{
+  display: block;
+  position: absolute;
+  width: 186px;
+  height: 116px;
+  left: 10px;
+  top: 10px;
+  background: black;
+  overflow: hidden;
+  border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+.gallery-container img{
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.gallery-container img:hover{
+  -webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
 }

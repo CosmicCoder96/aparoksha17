@@ -10,7 +10,12 @@ $(function(){
         strings: ["$ Loading events..."],
         typeSpeed: 50
       });
+      $(".element-events").typed({
+        strings: ["$ Loading gallery..."],
+        typeSpeed: 50
+      });
       $(".events").addClass("hide");
+      $(".gallery").addClass("hide");
       $(".red").click(function(){
         $("#draggable").css({ "left": "0", "top": "0" })
         $(".terminal").addClass("close");
@@ -19,9 +24,23 @@ $(function(){
         $("#draggable").css({ "left": "0", "top": "0" })
         $(".events").addClass("close");
       });
+       $(".red-gallery").click(function(){
+        $("#draggable").css({ "left": "0", "top": "0" })
+        $(".gallery").addClass("close");
+      });
 
       $(".yellow").click(function(){
         $(".terminal").addClass("hide");
+        $("#draggable").css({ "left": "0", "top": "0" })
+      });
+
+      $(".yellow-events").click(function(){
+        $(".events").addClass("hide");
+        $("#draggable").css({ "left": "0", "top": "0" })
+      });
+
+      $(".yellow-gallery").click(function(){
+        $(".gallery").addClass("hide");
         $("#draggable").css({ "left": "0", "top": "0" })
       });
 
@@ -31,6 +50,24 @@ $(function(){
           $(".terminal").removeClass("size");
         } else {
           $(".terminal").addClass("size");
+          $("#draggable").css({ "left": "0", "top": "0" })
+        }
+      });
+      $(".green-events").click(function(){
+        if ( $(".events").hasClass("size") )
+        {
+          $(".events").removeClass("size");
+        } else {
+          $(".events").addClass("size");
+          $("#draggable").css({ "left": "0", "top": "0" })
+        }
+      });
+      $(".green-gallery").click(function(){
+        if ( $(".gallery").hasClass("size") )
+        {
+          $(".gallery").removeClass("size");
+        } else {
+          $(".gallery").addClass("size");
           $("#draggable").css({ "left": "0", "top": "0" })
         }
       });
@@ -78,6 +115,66 @@ $(function(){
           $(".events").addClass("hide");
         }
       });
+      $(".gallery-app").click(function(){
+        $("#draggable").css({ "left": "0", "top": "0" })
+        if ( !$(".terminal").hasClass("hide") )
+        {
+          $(".terminal").addClass("hide");
+        }
+        if ( !$(".events").hasClass("hide") )
+        {
+          $(".events").addClass("hide");
+        }
+        
+        if ( $(".gallery").hasClass("hide") )
+        {
+          $(".gallery").removeClass("hide");
+        } 
+        else if ( $(".gallery").hasClass("close") ) {
+          $(".gallery").removeClass("close");
+        } else {
+          $(".gallery").addClass("hide");
+        }
+      });
 
       $( "#draggable" ).draggable();
     });
+var angle = 60;
+// var icon = -90;
+var moveRight = function() {
+  angle += 60;
+  //rotate icon
+  $('.hex-row-wrapper').css({
+    '-webkit-transform': 'rotate(' + angle + 'deg)',
+    '-moz-transform': 'rotate(' + angle + 'deg)',
+    '-o-transform': 'rotate(' + angle + 'deg)',
+    '-ms-transform': 'rotate(' + angle + 'deg)'
+  });
+};
+var moveLeft = function() {
+  angle -= 60;
+  //rotate icon
+  $('.hex-row-wrapper').css({
+    '-webkit-transform': 'rotate(' + angle + 'deg)',
+    '-moz-transform': 'rotate(' + angle + 'deg)',
+    '-o-transform': 'rotate(' + angle + 'deg)',
+    '-ms-transform': 'rotate(' + angle + 'deg)'
+  });
+};
+
+$('.arrow-right').click(moveRight);
+$('.arrow-left').click(moveLeft);
+
+document.body.onkeydown = function(event) {
+  event = event || window.event;
+  var keycode = event.charCode || event.keyCode;
+  if (keycode === 37) {
+    moveLeft();
+  }
+  if (keycode === 39) {
+    moveRight();
+  }
+  if (keycode === 40) {
+    $('.hex-row-wrapper').toggleClass('expand');
+  }
+}
