@@ -269,7 +269,7 @@ whichAppsAreRunning();
 var rightClickMenu = function () {
     var $screen = $('.screen');
     $screen.bind('contextmenu', function (e) {
-        e.preventDefault();
+        //e.preventDefault();
         $('.context-menu').finish().toggle().css({
             top: e.pageY - 32 + 'px',
             left: e.pageX + 1 + 'px'
@@ -295,7 +295,7 @@ var rightClickMenu = function () {
         $('.context-menu').hide();
     });
 };
-rightClickMenu();
+//rightClickMenu();
 var windowThumbSize = function () {
     $('.thumb-size-slider').slider({
         range: 'min',
