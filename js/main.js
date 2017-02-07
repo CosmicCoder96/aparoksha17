@@ -14,6 +14,7 @@ var activeWindow = function () {
         e.stopPropagation();
         $window.removeClass('current-window');
         $(this).addClass('current-window');
+        $('.grid').packery('layout');
     });
 };
 activeWindow();
@@ -25,6 +26,7 @@ var draggableWindow = function () {
         start: function (event, ui) {
             $window.removeClass('current-window');
             $(this).addClass('current-window');
+
         }
     });
 };
@@ -37,6 +39,7 @@ var resizableWindow = function () {
         minHeight: 225,
         start: function (event, ui) {
             draggableWindow();
+            $('.grid').packery('layout');
         }
     });
 };
@@ -237,6 +240,7 @@ var resizableDock = function () {
                 height: ui.size.height
             });
             $('.dock').css('height', ui.size.height + 10);
+            $('.grid').packery('layout');
         }
     });
 };
