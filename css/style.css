@@ -877,37 +877,54 @@ li.system-menu > a {
   transition: width .2s, height .2s;
 }
 .window .window-content .grid-item .desc{
+  font-family: 'Ubuntu', sans-serif;
   position: absolute;
+  background-color: white;
+  padding: 10px;
   bottom: 0px;
-  background-color: rgba(255, 255, 255, .8);
   opacity: 0;
   text-align: center;
   transition: opacity .2s;
+  border:1px solid grey;
 }
-.window .window-content .grid-item .btn-details{
+.window .window-content .grid-item .btn1{
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  height: 40px;
   position: absolute;
-  bottom: 40px;
-  z-index: -1;
+  background-color: white;
+  padding: 10px;
+  top: 0px;
   opacity: 0;
-  transition: opacity .2s;
+  border:1px solid grey;
+  border-radius: 0px;
+  text-align: center;
+  transition: all .2s;
 }
+.window .window-content .grid-item .btn1:hover{
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
 
 .window .window-content .grid-item--width2 { 
   background: purple;
   width: 300px; 
   height: 300px;
 }
+
 .window .window-content .grid-item--large{
   background: orange;
   width: 400px;
   height: 400px;
 }
+
 .window .window-content .grid-item--large .desc{
-  font-family: 'Roboto', sans-serif;
   opacity: 1;
 }
-.window .window-content .grid-item--large .btn-details{
-  z-index: 10;
+
+.window .window-content .grid-item--large .btn1{
   opacity: 1;
 }
 
