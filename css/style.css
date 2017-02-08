@@ -910,14 +910,14 @@ li.system-menu > a {
 
 .window .window-content .grid-item--width2 { 
   background: purple;
-  width: 300px; 
-  height: 300px;
+  width: 220px; 
+  height: 220px;
 }
 
 .window .window-content .grid-item--large{
   background: orange;
-  width: 400px;
-  height: 400px;
+  width: 340px;
+  height: 340px;
 }
 
 .window .window-content .grid-item--large .desc{
@@ -928,7 +928,7 @@ li.system-menu > a {
   opacity: 1;
 }
 
-
+.gutter-sizer { width: 20px; }
 
 .window .content-wrapper p {
   margin: 0;

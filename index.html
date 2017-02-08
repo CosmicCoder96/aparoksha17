@@ -592,8 +592,50 @@
                     </nav>
                 </aside>
                 <div class="content-ctr">
-                  <div class="window-content grid" data-packery='{ "itemSelector": ".grid-item", "gutter": 10 }'>
-                  
+                  <div class="window-content grid" >
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item" >
+                      <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/drama/innovation.jpg">
+                      <div class="btn1">
+                      More Details
+                      </div>
+                      <div class="desc">
+                      A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
+                      </div>
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                      <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/gamers_asylum/cs.jpg">
+                      <div class="desc">
+                      A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
+                      </div>
+                    </div>
+                    <div class="grid-item">
+                      <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/drama/DIRECTOR.jpg">
+                      <div class="desc">
+                      A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
+                      </div>
+                    </div>
+                    <div class="grid-item" >
+                      <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/drama/innovation.jpg">
+                      <div class="btn1">
+                      More Details
+                      </div>
+                      <div class="desc">
+                      A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
+                      </div>
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                      <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/gamers_asylum/cs.jpg">
+                      <div class="desc">
+                      A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
+                      </div>
+                    </div>
+                    <div class="grid-item">
+                      <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/drama/DIRECTOR.jpg">
+                      <div class="desc">
+                      A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
+                      </div>
+                    </div>
                     <div class="grid-item" >
                       <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " src="http://effe.org.in/images/drama/innovation.jpg">
                       <div class="btn1">
@@ -917,7 +959,8 @@
   $('.grid').packery({
     // options
     itemSelector: '.grid-item',
-    gutter: 10
+    gutter: '.gutter-sizer',
+    horizontal: false
   });
   var $grid = $('.grid').packery({
     itemSelector: '.grid-item'
@@ -928,7 +971,7 @@
     $(  event.currentTarget  ).toggleClass('grid-item--large');
     // trigger layout after item size changes
     setTimeout( function(){
-      $grid.packery('layout'); }, 200); 
+      $grid.packery('layout'); }, 300); 
   });
 </script>
 </body></html>
