@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	
+	</title>
+	<style>
+	body
+	{
+		background-color: black;
+	}
+	#logo-container{
+		position:absolute;
+		margin:0 auto;
+		left:400px;
+		top:200px;
+
+	}
+	#logo-container img
+	{
+		position:absolute;
+		top:0;
+		left:200px;
+		width:250px;
+		height:270px;
+		margin:0 auto;
+		opacity:0;
+		-webkit-transition: opacity 1s; /* Safari */
+    	transition: opacity 1s;
+	}
+	</style>
+</head>
+<body>
+<div id = "logo-container">
+<img src = "images/ap0.png">
+<img src = "images/ap22.png">
+<img src = "images/ap30.png">
+<img src = "images/ap38.png">
+<img src = "images/ap42.png">
+</div>
+</body>
+<script
+  src="js/jquery.min.js"></script>
+<script>
+var x = $('img');
+var i =1,flag=0;
+setInterval(function(){
+x.eq(i).css({"opacity":1});
+x.eq(i-1).css({"opacity":0});
+
+i++;
+i%=5;
+},1500);
+</script>
+</html>
