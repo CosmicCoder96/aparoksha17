@@ -346,12 +346,12 @@
 
     <main class="screen">
         <div id = "logo-container">
-    <img src = "images/ap0.png">
-    <img src = "images/ap22.png">
-    <img src = "images/ap30.png">
-    <img src = "images/ap38.png">
-    <img src = "images/ap42.png">
-    </div>
+<img class = "logo" src = "images/ap0.png">
+<img class = "logo" src = "images/ap22.png">
+<img class = "logo" src = "images/ap30.png">
+<img class = "logo" src = "images/ap38.png">
+<img class = "logo" src = "images/ap42.png">
+</div>
         <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
@@ -1076,6 +1076,17 @@
       $grid.packery('layout'); }, 300); 
   });
 </script>
-</body>
 
+</body>
+<script>
+var x = $('.logo');
+var i =1,flag=0;
+setInterval(function(){
+x.eq(i).css({"opacity":1});
+x.eq(i-1).css({"opacity":0});
+
+i++;
+i%=5;
+},1500);
+</script>
 </html>
