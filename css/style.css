@@ -1562,3 +1562,34 @@ li.system-menu > a {
     -webkit-transition: opacity 1s; /* Safari */
       transition: opacity 1s;
   }
+#closebt-container {
+  position: relative;
+  width:100%;
+  text-align:center;
+  margin-top:40px;
+    color:black;
+
+  z-index: 10000;
+}
+
+.closebt {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor:pointer;
+}
+
+.closebt:hover {
+  transform:rotate(90deg);
+}
+
+#item > p  {
+  margin:0px;
+  color:#E74B3D;
+}
+/*.thumb img
+{
+  width:100%;
+}*/

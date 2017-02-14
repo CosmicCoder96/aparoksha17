@@ -9,9 +9,11 @@
     <meta name="author" content="CosmicCoder96, shubham-padia, dewana-dewan">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/bootstrap.css'>   
     <link rel='stylesheet' href='./css/style.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
     <link href="./images/favicon.ico" rel="shortcut icon">
     <style class="cp-pen-styles">
@@ -354,6 +356,54 @@
 <img class = "logo" src = "images/ap48.png">
 
 </div>
+ <a id="demo01" href="#animatedModal">Sponsors</a>
+
+    <!--DEMO01-->
+   <div id="animatedModal">
+            <div id="closebt-container" class="close-animatedModal">
+                <img class="closebt" src="images/closebt.svg">
+            </div>
+
+            <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
+
+                <div class="thumb col-lg-4" style="display:none;" >
+                <img src = "./images/sponsors/github.png">
+                <img src = "./images/sponsors/codepen.png">
+
+                </div>
+
+              <!--   <div class="thumb col-lg-4"  style="display:none;">
+                </div> -->
+
+                <div class="thumb col-lg-4" style="display:none;">
+                <img src = "./images/sponsors/meteor.png">
+                                <img src = "./images/sponsors/codeanywhere.png">
+
+                </div>
+                
+               <!--  <div class="thumb col-lg-4" style="display:none;">
+                <img src = "./images/sponsors/temboo.png">
+                </div> -->
+                <div class="thumb col-lg-4" style="display:none;">
+                <img src = "./images/sponsors/wolframalpha.jpg">
+
+                </div>
+                <div class="thumb col-lg-4" style="display:none;">
+                <img src = "./images/sponsors/gitlab.svg">
+                </div>
+                <div class="thumb col-lg-4" style="display:none;">
+                <img src = "./images/sponsors/hackster.png">
+                </div>
+                             <div class="thumb col-lg-4" style="display:none;">
+                <img src = "./images/sponsors/kloudless.png">
+                                                <img src = "./images/sponsors/temboo.png">
+
+                </div>
+
+
+           </div>
+
+        </div>
         <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
@@ -1058,6 +1108,37 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
     <script src='./js/packery.pkgd.min.js'></script>
     <script src="./js/main.js"></script>
+    <script src="./js/animatedModal.js"></script>
+     <script src="./js/plugins.js"></script>
+
+    <script>
+    //$('#demo01').animatedModal();
+$(document).ready(function(){
+    $("#demo01").animatedModal({
+        color:'white',
+        beforeOpen: function() {
+
+            var children = $(".thumb");
+            var index = 0;
+
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.expandIn", { opacity:1, stagger: 250 });
+                window.setTimeout(addClassNextChild, 200);
+            }
+
+            addClassNextChild();
+
+        },
+        afterClose: function() {
+          $(".thumb").hide();
+              
+        }
+    });
+});
+
+</script>
+
     <script type="text/javascript">
   $('.grid').packery({
     // options
@@ -1091,4 +1172,5 @@ i++;
 i%=6;
 },1500);
 </script>
+
 </html>
