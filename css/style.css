@@ -599,7 +599,7 @@ li.system-menu > a {
   transition: .2s;
   -webkit-transition-property: scale, width, height, left, top, opacity;
   transition-property: scale, width, height, left, top, opacity;
-  width: 700px;
+  width: 90vw;
   z-index: 0;
 }
 .window.window-closed {
@@ -886,6 +886,7 @@ li.system-menu > a {
   text-align: center;
   transition: opacity .2s;
   border:1px solid grey;
+  display: none;
 }
 .window .window-content .grid-item .btn1{
   font-family: 'Ubuntu', sans-serif;
@@ -922,6 +923,7 @@ li.system-menu > a {
 
 .window .window-content .grid-item--large .desc{
   opacity: 1;
+  display: block;
 }
 
 .window .window-content .grid-item--large .btn1{
