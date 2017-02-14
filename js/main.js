@@ -395,7 +395,7 @@ var zoomSelectedPhoto = function () {
                 console.log('image loaded correctly');
             }).on('error', function () {
                 console.log('error loading image');
-            }).attr('src', $(originalImage).attr('src'));
+            }).attr('src', $(this).attr('src'));
             $(this).addClass('photo__zoomed');
             var selectedImgSrc = $(this).find('img').attr('src');
             var largeImgSrc = selectedImgSrc.replace('_n.jpg', '_h.jpg');

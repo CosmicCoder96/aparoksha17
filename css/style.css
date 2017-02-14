@@ -1589,6 +1589,13 @@ li.system-menu > a {
   margin:0px;
   color:#E74B3D;
 }
+.sponsor
+{
+  width:15em;
+  height:10em;
+  margin-top:8vh;
+  margin-left: 0;
+}
 /*.thumb img
 {
   width:100%;

@@ -356,9 +356,7 @@
 <img class = "logo" src = "images/ap48.png">
 
 </div>
- <a id="demo01" href="#animatedModal">Sponsors</a>
 
-    <!--DEMO01-->
    <div id="animatedModal">
             <div id="closebt-container" class="close-animatedModal">
                 <img class="closebt" src="images/closebt.svg">
@@ -367,42 +365,21 @@
             <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
 
                 <div class="thumb col-lg-4" style="display:none;" >
-                <img src = "./images/sponsors/github.png">
-                <img src = "./images/sponsors/codepen.png">
-
-                </div>
-
-              <!--   <div class="thumb col-lg-4"  style="display:none;">
-                </div> -->
-
-                <div class="thumb col-lg-4" style="display:none;">
-                <img src = "./images/sponsors/meteor.png">
-                                <img src = "./images/sponsors/codeanywhere.png">
-
-                </div>
-                
-               <!--  <div class="thumb col-lg-4" style="display:none;">
-                <img src = "./images/sponsors/temboo.png">
-                </div> -->
-                <div class="thumb col-lg-4" style="display:none;">
-                <img src = "./images/sponsors/wolframalpha.jpg">
-
+                <div class = "sponsor"><img src = "./images/sponsors/github.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/codepen.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/kloudless.png"></div>
                 </div>
                 <div class="thumb col-lg-4" style="display:none;">
-                <img src = "./images/sponsors/gitlab.svg">
+                <div class = "sponsor"><img src = "./images/sponsors/meteor.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/codeanywhere.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/temboo.png"></div>
                 </div>
                 <div class="thumb col-lg-4" style="display:none;">
-                <img src = "./images/sponsors/hackster.png">
+                <div class = "sponsor"><img src = "./images/sponsors/wolframalpha.jpg"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/gitlab.svg"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/hackster.png"></div>
                 </div>
-                             <div class="thumb col-lg-4" style="display:none;">
-                <img src = "./images/sponsors/kloudless.png">
-                                                <img src = "./images/sponsors/temboo.png">
-
-                </div>
-
-
            </div>
-
         </div>
         <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
@@ -989,9 +966,9 @@
                     </a>
                 </li>
                 <li class="app">
-                    <a href="#mail">
+                    <a id = "sponsors" href="#animatedModal">
                         <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-mail.png" alt="Mail App Icon"/></span>
-                        <span class="app-title">Mail <small>(unfinished)</small></span>
+                        <span class="app-title">Sponsors</span>
                     </a>
                 </li>
                 <li class="app">
@@ -1112,9 +1089,9 @@
      <script src="./js/plugins.js"></script>
 
     <script>
-    //$('#demo01').animatedModal();
+    //$('#sponsors').animatedModal();
 $(document).ready(function(){
-    $("#demo01").animatedModal({
+    $("#sponsors").animatedModal({
         color:'white',
         beforeOpen: function() {
 
