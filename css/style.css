@@ -1537,3 +1537,25 @@ li.system-menu > a {
   height: 90%;
   width: 400px;
 }
+#logo-container{
+    position:absolute;
+    z-index: 2000;
+    margin:0 auto;
+    left:400px;
+    top:200px;
+
+
+  }
+  #logo-container img
+  {
+    position:absolute;
+    top:0;
+    left:200px;
+    width:250px;
+    height:270px;
+    z-index:1000;
+    margin:0 auto;
+    opacity:0;
+    -webkit-transition: opacity 1s; /* Safari */
+      transition: opacity 1s;
+  }
