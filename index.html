@@ -15,7 +15,8 @@
     <link rel='stylesheet' href='./css/style.css'>
     <link rel='stylesheet prefetch' href='./css/normalize.min.css'>
     <link rel="stylesheet" href="css/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet">
+     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700|Lobster|Cinzel|Oleo+Script" rel="stylesheet">
     <link href="./images/favicon.ico" rel="shortcut icon">
     <style class="cp-pen-styles">
 
@@ -357,65 +358,95 @@
     </header>
 
     <main class="screen">
-        <div id = "logo-container">
-<img class = "logo" src = "images/ap0.png">
-<img class = "logo" src = "images/ap22.png">
-<img class = "logo" src = "images/ap30.png">
-<img class = "logo" src = "images/ap38.png">
-<img class = "logo" src = "images/ap42.png">
-<img class = "logo" src = "images/ap48.png">
+        <div id="logo-container">
+            <img class="logo" src="images/ap0.png">
+            <img class="logo" src="images/ap22.png">
+            <img class="logo" src="images/ap30.png">
+            <img class="logo" src="images/ap38.png">
+            <img class="logo" src="images/ap42.png">
+            <img class="logo" src="images/ap48.png">
 
-</div>
+        </div>
 
-   <div id="animatedModal">
+        <div id="animatedModal">
             <div id="closebt-container" class="close-animatedModal">
                 <img class="closebt" src="images/closebt.svg">
             </div>
 
             <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
 
-                <div class="thumb col-lg-4" style="display:none;" >
-                <div class = "sponsor"><img src = "./images/sponsors/github.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/codepen.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/kloudless.png"></div>
+                <div class="thumb col-lg-4" style="display:none;">
+                    <div class="sponsor"><img src="./images/sponsors/github.png"></div>
+                    <div class="sponsor"><img src="./images/sponsors/codepen.png"></div>
+                    <div class="sponsor"><img src="./images/sponsors/kloudless.png"></div>
                 </div>
                 <div class="thumb col-lg-4" style="display:none;">
-                <div class = "sponsor"><img src = "./images/sponsors/meteor.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/codeanywhere.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/temboo.png"></div>
+                    <div class="sponsor"><img src="./images/sponsors/meteor.png"></div>
+                    <div class="sponsor"><img src="./images/sponsors/codeanywhere.png"></div>
+                    <div class="sponsor"><img src="./images/sponsors/temboo.png"></div>
                 </div>
                 <div class="thumb col-lg-4" style="display:none;">
-                <div class = "sponsor"><img src = "./images/sponsors/wolframalpha.jpg"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/gitlab.svg"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/hackster.png"></div>
+                    <div class="sponsor"><img src="./images/sponsors/wolframalpha.jpg"></div>
+                    <div class="sponsor"><img src="./images/sponsors/gitlab.svg"></div>
+                    <div class="sponsor"><img src="./images/sponsors/hackster.png"></div>
                 </div>
-           </div>
+            </div>
         </div>
         <div id="animatedModal2">
+            <row>
             <div id="closebt-container" class="close-animatedModal2">
-                <img class="closebt" src="images/closebt.svg">
+                <div><img class="closebt" src="images/closebt.svg"></div>
             </div>
-
-            <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
-
-                <div class="thumb col-lg-4" style="display:none;" >
-                <div class = "sponsor"><img src = "./images/sponsors/github.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/codepen.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/kloudless.png"></div>
+            </row>
+            <div id="modal-container" class="col-sm-12 col-md-12 col-lg-12">
+                <row>
+                <div class="col-sm-1 col-md-1 col-lg-1"></div>    
+                <div class="thumb col-sm-10 col-md-10 col-lg-10 " style="display:none;font-family: 'nevis';">
+                    <div class="event-header" style="display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-bottom: 7px solid SkyBlue;
+  font-family: Lobster /*">
+                        <div class="event-venue" style="font-weight:700; font-size:24px; margin-top:29px; color: yellow"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; 15 February 2017</div>
+                        <div class="event-name" style="font-weight:900;font-size: 50px; color: yellow">Perplexus</div>    
+                        <div class="event-venue" style="font-weight:700; font-size:24px; margin-top:29px; color: yellow"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;CC3/Senate Hall</div>           
+                    </div> 
                 </div>
-                <div class="thumb col-lg-4" style="display:none;">
-                <div class = "sponsor"><img src = "./images/sponsors/meteor.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/codeanywhere.png"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/temboo.png"></div>
+                <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                </row>
+                <row>
+                <div class="col-sm-1 col-md-1 col-lg-1"></div>    
+                <div class="thumb col-sm-10 col-md-10 col-lg-10 col-md-offset-1" style="display:none;font-family: 'nevis';">
+                    <div class="event-header" style="display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-family: 'Oleo Script' /*">
+                        <div style="font-weight: 500;font-family: 'Oleo Script'; color: white; font-size:21px">Shubham Padia | +91-9918463021</div>
+                        <div style="font-weight: 500;font-family: 'Oleo Script'; color: white; font-size:21px">Abhinav Khare | +91-9999999999</div>
+                        </center>    
+                    </div> 
                 </div>
-                <div class="thumb col-lg-4" style="display:none;">
-                <div class = "sponsor"><img src = "./images/sponsors/wolframalpha.jpg"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/gitlab.svg"></div>
-                <div class = "sponsor"><img src = "./images/sponsors/hackster.png"></div>
-                </div>
-           </div>
-        </div>
-        <!-- <div class="window finder window-closed" id="finder">
+                <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                </row>
+                <row>
+                    <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                    <div class="event-desc col-sm-6 col-md-6 col-lg-6 col-md-offset-1" style="font-family: Cinzel; font-weight: 600; font-size: 20px;color: #F6FF97">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec quam felis, ultricies nec
+                            enim. Donec.
+                        </p>
+                    </div>
+                    <div class="event-image col-sm-4 col-md-4 col-lg-4" style="filter: grayscale(100%);"><img src="images/mun.jpg" width="300" height="260"></div>
+                
+            </div>
+            </row>
+            <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
                 <ul class="window-controls">
@@ -789,7 +820,7 @@
                 <iframe src="http://google.com" frameborder="0"></iframe>
             </div>
         </div>
-        <div class="window window-closed" id="textedit" >
+        <div class="window window-closed" id="textedit">
             <div class="window-content grid" style="background: transparent">
                 <div class="gutter-sizer"></div>
                 <div class="grid-item">
@@ -1000,13 +1031,13 @@
                     </a>
                 </li>
                 <li class="app">
-                    <a id = "sponsors" href="#animatedModal">
+                    <a id="sponsors" href="#animatedModal">
                         <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-mail.png" alt="Mail App Icon"/></span>
                         <span class="app-title">Sponsors</span>
                     </a>
                 </li>
                 <li class="app">
-                    <a id = "contacts" href="#animatedModal2">
+                    <a id="contacts" href="#animatedModal2">
                         <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-preferences.png" alt="Preferences App Icon"/></span>
                         <span class="app-title">Preferences <small>(unfinished)</small></span>
                     </a>
@@ -1120,12 +1151,13 @@
     <script src='./js/packery.pkgd.min.js'></script>
     <script src="./js/main.js"></script>
     <script src="./js/animatedModal.js"></script>
-     <script src="./js/plugins.js"></script>
+    <script src="./js/plugins.js"></script>
 
     <script>
     //$('#sponsors').animatedModal();
 $(document).ready(function(){
     $("#sponsors").animatedModal({
+        modalTarget:'animatedModal',
         color:'white',
         beforeOpen: function() {
 
@@ -1149,7 +1181,7 @@ $(document).ready(function(){
     $("#contacts").animatedModal({
                 modalTarget:'animatedModal2',
 
-        color:'white',
+        color:'gray',
         beforeOpen: function() {
 
             var children = $(".thumb");

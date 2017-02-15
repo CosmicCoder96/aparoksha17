@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "nevis";
+  src: url('nevis.ttf');
+}
+
 .menu-bar nav:after, .window-actions:after, .album-photos:after {
   clear: both;
   content: "";
