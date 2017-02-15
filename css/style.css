@@ -1612,21 +1612,34 @@ li.system-menu > a {
     display: block;
     position: relative;
     left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
+    top: 30%;
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    /*border-radius: 50%;*/
     border: 3px solid transparent;
-    border-top-color: #3498db;
+    /*border-top-color: #3498db;*/
+    background-image: url("../images/ap0.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-animation: spin 2.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 
-    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-
-    z-index: 1001;
+    z-index: 1003;
 }
 
-    #loader:before {
+#loader-wrapper img{
+      z-index: 1002;
+    position: absolute;
+    width: 95% ;
+    left: 2.5%;
+    right: 2.5%;
+    bottom: 10vh
+
+}
+
+    /*#loader:before {
         content: "";
         position: absolute;
         top: 5px;
@@ -1637,9 +1650,9 @@ li.system-menu > a {
         border: 3px solid transparent;
         border-top-color: #e74c3c;
 
-        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-    }
+        -webkit-animation: spin 5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+/*/*        animation: spin 5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+/*    }
 
     #loader:after {
         content: "";
@@ -1653,31 +1666,31 @@ li.system-menu > a {
         border-top-color: #f9c922;
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-    }
-
+  /*        animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    
+*/
     @-webkit-keyframes spin {
         0%   { 
-            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(0deg);  /* IE 9 */
-            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotateY(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotateY(0deg);  /* IE 9 */
+            transform: rotateY(0deg);  /* Firefox 16+, IE 10+, Opera */
         }
         100% {
-            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(360deg);  /* IE 9 */
-            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotateY(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotateY(360deg);  /* IE 9 */
+            transform: rotateY(360deg);  /* Firefox 16+, IE 10+, Opera */
         }
     }
     @keyframes spin {
         0%   { 
-            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(0deg);  /* IE 9 */
-            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotateY(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotateY(0deg);  /* IE 9 */
+            transform: rotateY(0deg);  /* Firefox 16+, IE 10+, Opera */
         }
         100% {
-            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(360deg);  /* IE 9 */
-            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotateY(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: rotateY(360deg);  /* IE 9 */
+            transform: rotateY(360deg);  /* Firefox 16+, IE 10+, Opera */
         }
     }
 
@@ -1686,7 +1699,7 @@ li.system-menu > a {
         top: 0;
         width: 51%;
         height: 100%;
-        background: #ffffff;
+        background: #000000;
         z-index: 1000;
         -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
         -ms-transform: translateX(0);  /* IE 9 */
