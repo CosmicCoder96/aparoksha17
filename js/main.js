@@ -260,6 +260,7 @@ var whichAppsAreRunning = function () {
     $('a', '.dock').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
+        $('.window').removeClass('current-window window-opened').addClass('window-closed').hide();
         var $appLink = $(this).attr('href');
         $('.window').removeClass('current-window');
         $($appLink).show();
