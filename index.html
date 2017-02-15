@@ -380,6 +380,30 @@
                 </div>
            </div>
         </div>
+        <div id="animatedModal2">
+            <div id="closebt-container" class="close-animatedModal2">
+                <img class="closebt" src="images/closebt.svg">
+            </div>
+
+            <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
+
+                <div class="thumb col-lg-4" style="display:none;" >
+                <div class = "sponsor"><img src = "./images/sponsors/github.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/codepen.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/kloudless.png"></div>
+                </div>
+                <div class="thumb col-lg-4" style="display:none;">
+                <div class = "sponsor"><img src = "./images/sponsors/meteor.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/codeanywhere.png"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/temboo.png"></div>
+                </div>
+                <div class="thumb col-lg-4" style="display:none;">
+                <div class = "sponsor"><img src = "./images/sponsors/wolframalpha.jpg"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/gitlab.svg"></div>
+                <div class = "sponsor"><img src = "./images/sponsors/hackster.png"></div>
+                </div>
+           </div>
+        </div>
         <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
@@ -971,7 +995,7 @@
                     </a>
                 </li>
                 <li class="app">
-                    <a href="#system-preferences">
+                    <a id = "contacts" href="#animatedModal2">
                         <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-preferences.png" alt="Preferences App Icon"/></span>
                         <span class="app-title">Preferences <small>(unfinished)</small></span>
                     </a>
@@ -1111,6 +1135,31 @@ $(document).ready(function(){
               
         }
     });
+    $("#contacts").animatedModal({
+                modalTarget:'animatedModal2',
+
+        color:'white',
+        beforeOpen: function() {
+
+            var children = $(".thumb");
+            var index = 0;
+
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.swoopIn", { opacity:1, stagger: 250 });
+                window.setTimeout(addClassNextChild, 200);
+            }
+
+            addClassNextChild();
+
+        },
+        afterClose: function() {
+          $(".thumb").hide();
+              
+        }
+    });
+    // $("#contacts").animatedModal();
+
 });
 
 </script>
