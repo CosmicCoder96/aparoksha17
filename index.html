@@ -1099,7 +1099,7 @@ $(document).ready(function(){
 
             function addClassNextChild() {
                 if (index == children.length) return;
-                children.eq(index++).show().velocity("transition.expandIn", { opacity:1, stagger: 250 });
+                children.eq(index++).show().velocity("transition.swoopIn", { opacity:1, stagger: 250 });
                 window.setTimeout(addClassNextChild, 200);
             }
 
