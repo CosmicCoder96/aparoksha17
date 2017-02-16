@@ -435,6 +435,16 @@
                     <div class="event-image col-sm-4 col-md-4 col-lg-4"><img src="images/mun.jpg" width="300" height="260"></div>
             </div>
             </row>
+            </div>
+            <div id="hint">
+            <div id="closebt-container" class="close-hint">
+                <img class="closebt" src="images/closebt.svg">
+            </div>
+
+            <div id="modal-container" style="height: 90%; padding: 20px">
+                <iframe width="100%" height="100%" src="https://drive.google.com/file/d/0B7IJhC8PF-c9RzFLRjZkYXVsdkE/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
             <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
@@ -1050,7 +1060,7 @@
                 <!--</a>-->
                 <!--</li>-->
                 <li class="app">
-                    <a href="#terminal">
+                    <a id="hint-dock" href="#hint">
                         <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-terminal.png" alt="Terminal App Icon"/></span>
                         <span class="app-title">Terminal <small>(unfinished)</small></span>
                     </a>
@@ -1171,6 +1181,29 @@ $(document).ready(function(){
     });
     $("#contacts").animatedModal({
                 modalTarget:'animatedModal2',
+
+        color:'white',
+        beforeOpen: function() {
+
+            var children = $(".thumb");
+            var index = 0;
+
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.swoopIn", { opacity:1, stagger: 250 });
+                window.setTimeout(addClassNextChild, 200);
+            }
+
+            addClassNextChild();
+
+        },
+        afterClose: function() {
+          $(".thumb").hide();
+              
+        }
+    });
+    $("#hint-dock").animatedModal({
+                modalTarget:'hint',
 
         color:'white',
         beforeOpen: function() {
