@@ -1836,4 +1836,51 @@ li.system-menu > a {
   ******* STARS ************* 
   =========================== */
   
+/*Event Modal*/
+.event-name{
+  font-weight:900;font-size: 4em;
+  color: black;
+}
 
+.event-venue{
+  font-weight:700; font-size: 1.5em; margin-top: 1.8em;
+  color: black;
+}
+
+.event-organiser{
+  font-weight: 500;font-family: 'Oleo Script';
+  color: #353535;
+  font-size: 1.2em;
+}
+
+.flex-event{
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+}
+
+.event-header{
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  font-family: 'Lobster';
+  border-bottom: 7px solid SkyBlue;
+}
+
+.event-organiser-header{
+  margin-bottom: 1em;
+}
+
+.event-desc{
+  font-family: Cinzel; font-weight: 600; font-size: 20px;
+  color: black;
+}
+
+.event-image{
+  filter: grayscale(100%);
+}
+
+.event-content{
+  display:none;
+  font-family: 'nevis';
+}
