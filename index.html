@@ -33,6 +33,9 @@
             <!-- <div class="loader-section section-right"></div> -->
 
         </div>
+    <div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
 
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -410,9 +413,9 @@
   margin-bottom: 5px;
   border-bottom: 7px solid SkyBlue;
   font-family: Lobster /*">
-                        <div class="event-venue" style="font-weight:700; font-size:24px; margin-top:29px; color: yellow"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; 15 February 2017</div>
-                        <div class="event-name" style="font-weight:900;font-size: 50px; color: yellow">Perplexus</div>    
-                        <div class="event-venue" style="font-weight:700; font-size:24px; margin-top:29px; color: yellow"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;CC3/Senate Hall</div>           
+                        <div class="event-venue" style="font-weight:700; font-size:24px; margin-top:29px; color: black"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; 15 February 2017</div>
+                        <div class="event-name" style="font-weight:900;font-size: 50px; color: black">Perplexus</div>    
+                        <div class="event-venue" style="font-weight:700; font-size:24px; margin-top:29px; color: black"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;CC3/Senate Hall</div>           
                     </div> 
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1"></div>
@@ -435,7 +438,7 @@
                 </row>
                 <row>
                     <div class="col-sm-1 col-md-1 col-lg-1"></div>
-                    <div class="event-desc col-sm-6 col-md-6 col-lg-6 col-md-offset-1" style="font-family: Cinzel; font-weight: 600; font-size: 20px;color: #F6FF97">
+                    <div class="event-desc col-sm-6 col-md-6 col-lg-6 col-md-offset-1" style="font-family: Cinzel; font-weight: 600; font-size: 20px;color: #000000">
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                             massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                             Donec quam felis, ultricies nec
@@ -1152,6 +1155,8 @@
     <script src="./js/main.js"></script>
     <script src="./js/animatedModal.js"></script>
     <script src="./js/plugins.js"></script>
+        <script src="./js/modernizr.js"></script>
+
 
     <script>
     //$('#sponsors').animatedModal();
@@ -1181,7 +1186,7 @@ $(document).ready(function(){
     $("#contacts").animatedModal({
                 modalTarget:'animatedModal2',
 
-        color:'gray',
+        color:'white',
         beforeOpen: function() {
 
             var children = $(".thumb");
