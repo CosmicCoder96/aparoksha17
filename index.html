@@ -395,6 +395,21 @@
                 </div>
             </div>
         </div>
+        <div id="animatedModal3">
+            <div id="closebt-container" class="close-animatedModal3">
+                <img class="closebt" src="images/closebt.svg">
+            </div>
+
+            <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
+
+                <div class="thumb col-lg-6" style="display:none;">
+                    <div class="contact"><img src=""></div>
+                    <div class ="desc">Abhishek Deora <br> +91 9938377448 </div>
+                    <div class="contact"><img src=""></div>
+                    <div class ="desc">Sahil Hindwani <br> +91 9938377448 </div>
+                </div>
+            </div>
+        </div>
         <div id="animatedModal2">
             <row>
                 <div id="closebt-container" class="close-animatedModal2">
@@ -1095,6 +1110,12 @@
                         <span class="app-title">Safari</span>
                     </a>
                 </li>
+                <li class="app">
+                    <a id="Contacts" href="#animatedModal3">
+                        <span class="app-icon"><img src="https://boilingpointdev.files.wordpress.com/2013/08/contacts1.png" alt="Contacts Icon"/></span>
+                        <span class="app-title">Contacts</span>
+                    </a>
+                </li>
                 <li class="dock-resizer ui-state-disabled"></li>
                 <li class="app ui-state-disabled">
                     <a href="#trash">
@@ -1159,6 +1180,28 @@
 $(document).ready(function(){
     $("#sponsors").animatedModal({
         modalTarget:'animatedModal',
+        color:'white',
+        beforeOpen: function() {
+
+            var children = $(".thumb");
+            var index = 0;
+
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.swoopIn", { opacity:1, stagger: 250 });
+                window.setTimeout(addClassNextChild, 200);
+            }
+
+            addClassNextChild();
+
+        },
+        afterClose: function() {
+          $(".thumb").hide();
+              
+        }
+    });
+    $("#Contacts").animatedModal({
+        modalTarget:'animatedModal3',
         color:'white',
         beforeOpen: function() {
 
