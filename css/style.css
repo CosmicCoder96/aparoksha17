@@ -1891,3 +1891,9 @@ li.system-menu > a {
   display:none;
   font-family: 'nevis';
 }
+#team-page
+{
+position:relative;
+width:100%;
+height:100%;
+}

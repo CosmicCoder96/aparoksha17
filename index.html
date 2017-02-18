@@ -400,15 +400,17 @@
                 <img class="closebt" src="images/closebt.svg">
             </div>
 
-            <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
+<!--             <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
+ -->
 
-                <div class="thumb col-lg-6" style="display:none;">
+             <!--    <div class="thumb col-lg-6" style="display:none;">
                     <div class="contact"><img src=""></div>
                     <div class ="desc">Abhishek Deora <br> +91 9938377448 </div>
                     <div class="contact"><img src=""></div>
                     <div class ="desc">Sahil Hindwani <br> +91 9938377448 </div>
-                </div>
-            </div>
+                </div> -->
+                <iframe id="team-page" onload="this.width=screen.width;this.height=screen.height;" data-src="https://cosmiccoder96.github.io/aparoksha17/team/index.html" src="about:blank"></iframe>
+            <!-- </div> -->
         </div>
         <div id="animatedModal2">
             <row>
@@ -1040,13 +1042,13 @@
             <ul>
                 <li class="app running ui-state-disabled">
                     <a href="#finder">
-                        <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-finder.png" alt="Finder App Icon"/></span>
-                        <span class="app-title">Finder</span>
+                        <span class="app-icon"><img src="./images/icons/events.png" alt="Event Icon"/></span>
+                        <span class="app-title">Events</span>
                     </a>
                 </li>
                 <li class="app">
                     <a id="sponsors" href="#animatedModal">
-                        <span class="app-icon"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30668/app-mail.png" alt="Mail App Icon"/></span>
+                        <span class="app-icon"><img src="./images/icons/sponsorship.png" alt="Mail App Icon"/></span>
                         <span class="app-title">Sponsors</span>
                     </a>
                 </li>
@@ -1176,6 +1178,11 @@
 
 
     <script>
+$("#Contacts").click(function(){
+    var iframe = $("#team-page");
+    iframe.attr("src", iframe.data("src")); 
+    console.log("hi");
+});
     //$('#sponsors').animatedModal();
 $(document).ready(function(){
     $("#sponsors").animatedModal({
@@ -1203,6 +1210,10 @@ $(document).ready(function(){
     $("#Contacts").animatedModal({
         modalTarget:'animatedModal3',
         color:'white',
+        width:'100%', 
+        height:'100%', 
+        top:'0px', 
+        left:'0px', 
         beforeOpen: function() {
 
             var children = $(".thumb");
