@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class=''>
+<html ng-app="apr">
 
 <head>
     <title>Aparoksha'17</title>
@@ -10,9 +10,9 @@
     <meta name="robots" content="index, follow">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel='stylesheet' href='./css/pace.css'>
-    
-<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-<script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAcut20KtsDQTbMjXD-rzg9-vk2EauPBqQ",
@@ -36,7 +36,7 @@
     </style>
 </head>
 
-<body>
+<body ng-controller="mainController">
     <div id="loader-wrapper">
         <div id="loader">
 
@@ -134,7 +134,7 @@
                             <a href="#nolink">Recent Items</a>
                             <ul class="dropdown child-nav">
                                 <li>
-                                    <a id="hint-list" href="#hint">Hint</a>
+                                    <a id="hint-list" href="#perplexus">Hint</a>
                                 </li>
                                 <li>
                                     <a href="#nolink">Recent Item</a>
@@ -213,8 +213,8 @@
                 <li>
                     <a href="#nolink">Edit</a>
                     <ul class="dropdown">
-                        <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
-                        <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="pop-perplexus" href="#perplexus">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="pop-demo" href="#demo">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
                         <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
                         <li class="separator"></li>
                         <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
@@ -420,18 +420,19 @@
                 <img class="closebt" src="images/closebt.svg">
             </div>
 
-          <div id="modal-container" style="height:83%" class="col-sm-12 col-md-12 col-lg-12">
+            <div id="modal-container" style="height:83%" class="col-sm-12 col-md-12 col-lg-12">
 
 
-             <!--    <div class="thumb col-lg-6" style="display:none;">
+                <!--    <div class="thumb col-lg-6" style="display:none;">
                     <div class="contact"><img src=""></div>
                     <div class ="desc">Abhishek Deora <br> +91 9938377448 </div>
                     <div class="contact"><img src=""></div>
                     <div class ="desc">Sahil Hindwani <br> +91 9938377448 </div>
                 </div> -->
                 <iframe id="team-page" height="90%" width="100%" data-src="https://cosmiccoder96.github.io/aparoksha17/team/index.html" src="about:blank"></iframe>
-             </div> 
+            </div>
         </div>
+        <event-modal event="event"></event-modal>
         <div id="animatedModal2">
             <row>
                 <div id="closebt-container" class="close-animatedModal2">
@@ -472,17 +473,18 @@
                     <div class="event-image col-sm-4 col-md-4 col-lg-4"><img src="images/mun.jpg" width="300" height="260"></div>
             </div>
             </row>
-            </div>
-            <div id="hint">
+        </div>
+        <div id="hint">
             <div id="closebt-container" class="close-hint">
                 <img class="closebt" src="images/closebt.svg">
             </div>
 
             <div id="modal-container" style="height: 90%; padding: 20px">
-                <iframe width="100%" height="100%" src="https://drive.google.com/file/d/0B7IJhC8PF-c9RzFLRjZkYXVsdkE/preview" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://drive.google.com/file/d/0B7IJhC8PF-c9RzFLRjZkYXVsdkE/preview" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
         </div>
-            <!-- <div class="window finder window-closed" id="finder">
+        <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
                 <ul class="window-controls">
@@ -1072,7 +1074,7 @@
                         <span class="app-title">Sponsors</span>
                     </a>
                 </li>
-                
+
                 <!--<li class="assets">-->
                 <!--<a href="#nolink">-->
                 <!--<span class="assets-icon"><img src="https://dl.dropboxusercontent.com/content_link/xjOb0Af8bLPGcjeN8zRRingaWSpqMHTQd0Zaj8LMzoOR3GEOXtkEi3pxuHa8v284/file" alt="Activity Monitor App Icon" /></span>-->
@@ -1086,7 +1088,7 @@
                     </a>
                 </li>
                 <li class="app">
-                    <a id = "hint-dock" href="#hint">
+                    <a id="hint-dock" href="#hint">
                         <span class="app-icon"><img src="./images/icons/HINT.png" alt="HINT"/></span>
                         <span class="app-title">Hack In The North</small></span>
                     </a>
@@ -1193,18 +1195,18 @@
             </li>
             <li><a href="#nolink">Show View Options</a></li>
         </ul>
-    </main>
-    <!-- <script src='https://production-assets.codepen.io/assets/common/stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js'></script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
-    <script src='./js/packery.pkgd.min.js'></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/animatedModal.js"></script>
-    <script src="./js/plugins.js"></script>
-    <script src="./js/modernizr.js"></script>
+
+        <!-- <script src='https://production-assets.codepen.io/assets/common/stopExecutionOnTimeout-58d22c749295bca52f487966e382a94a495ac103faca9206cbd160bdf8aedf2a.js'></script> -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+        <script src='./js/packery.pkgd.min.js'></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/animatedModal.js"></script>
+        <script src="./js/plugins.js"></script>
+        <script src="./js/modernizr.js"></script>
 
 
-    <script>
+        <script>
 $("#Contacts").click(function(){
     var iframe = $("#team-page");
     iframe.attr("src", iframe.data("src")); 
@@ -1307,10 +1309,76 @@ $(document).ready(function(){
               
         }
     });
-    $("#hint-list").animatedModal({
-                modalTarget:'hint',
+ var events = [
+    {
+        id: 'perplexus',
+        name: 'Perplexus',
+        organiser: 'Shubham Padia',
+        coorganiser: 'Abhinav Khare',
+        date: '18 Feb 2017',
+        location: 'CC3/Senate Hall',
+        desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aeneanmassa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Donec quam felis, ultricies nec enim. Donec.'
+    },
+    {
+        id: 'demo',
+        name: 'demo',
+        organiser: 'Shubham Padia',
+        coorganiser: 'Abhinav Khare',
+        date: '18 Feb 2017',
+        location: 'CC3/Senate Hall',
+        desc: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aeneanmassa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Donec quam felis, ultricies nec enim. Donec.'
+    }
+ ];
 
-        color:'white',
+$.each(events,function(index, event){ 
+    console.log(event.id); 
+    $('#hint').before(' \
+        <div id="' + event.id + '"> \
+        <row> \
+            <div id="closebt-container" class="close-' + event.id + '"> \
+                <div><img class="closebt" src="images/closebt.svg"></img> \
+                </div> \
+            </div> \
+        </row> \
+        <div id="modal-container" class="col-sm-12 col-md-12 col-lg-12"> \
+            <row> \
+                <div class="col-sm-1 col-md-1 col-lg-1"></div> \
+                <div class="event-content thumb col-sm-10 col-md-10 col-lg-10 "> \
+                    <div class="flex-event event-header"> \
+                        <div class="event-venue"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;' + event.date + '</div> \
+                        <div class="event-name">' + event.name + '</div> \
+                        <div class="event-venue"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;' + event.location + '</div> \
+                    </div> \
+                </div> \
+                <div class="col-sm-1 col-md-1 col-lg-1"></div> \
+            </row> \
+            <row> \
+                <div class="col-sm-1 col-md-1 col-lg-1"></div> \
+                <div class="thumb col-sm-10 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-1" style="display:none;font-family: nevis;"> \
+                    <div class="flex-event event-organiser-header"> \
+                        <div class="event-organiser">' + event.organiser + '</div> \
+                        <div class="event-organiser">' + event.coorganiser + '</div> \
+                         </center> \
+                    </div> \
+                </div> \
+                <div class="col-sm-1 col-md-1 col-lg-1"></div> \
+            </row> \
+            <row> \
+                <div class="col-sm-1 col-md-1 col-lg-1"></div> \
+                <div class="event-desc col-sm-6 col-md-6 col-lg-6 col-md-offset-1 col-lg-offset-1 col-sm-offset-1"> \
+                    <p> \
+                        ' + event.desc + ' \
+                    </p> \
+                </div> \
+                <div class="event-image col-sm-4 col-md-4 col-lg-4"><img src="images/mun.jpg" width="300" height="260"></div> \
+        </div> \
+        </row> \
+    </div> \
+    ');
+    $("#pop-" + event.id).animatedModal({
+                modalTarget: event.id,
+
+        color:"white",
         beforeOpen: function() {
 
             var children = $(".thumb");
@@ -1330,13 +1398,12 @@ $(document).ready(function(){
               
         }
     });
-    // $("#contacts").animatedModal();
-
 });
-
+});
 </script>
 
-    <script type="text/javascript">
+
+        <script type="text/javascript">
   $('.grid').packery({
     // options
     itemSelector: '.grid-item',
@@ -1372,5 +1439,6 @@ window.onload = function(){
 };
 
 </script>
+</main>
 
 </html>
