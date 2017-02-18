@@ -114,7 +114,7 @@
                             <a href="#nolink">Recent Items</a>
                             <ul class="dropdown child-nav">
                                 <li>
-                                    <a href="#nolink">Recent Item</a>
+                                    <a id="hint-list" href="#hint">Hint</a>
                                 </li>
                                 <li>
                                     <a href="#nolink">Recent Item</a>
@@ -400,8 +400,8 @@
                 <img class="closebt" src="images/closebt.svg">
             </div>
 
-<!--             <div id="modal-container" class="col-sm-8 col-md-8 col-lg-8 col-lg-offset-2">
- -->
+          <div id="modal-container" style="height:83%" class="col-sm-12 col-md-12 col-lg-12">
+
 
              <!--    <div class="thumb col-lg-6" style="display:none;">
                     <div class="contact"><img src=""></div>
@@ -409,8 +409,8 @@
                     <div class="contact"><img src=""></div>
                     <div class ="desc">Sahil Hindwani <br> +91 9938377448 </div>
                 </div> -->
-                <iframe id="team-page" onload="this.width=screen.width;this.height=screen.height;" data-src="https://cosmiccoder96.github.io/aparoksha17/team/index.html" src="about:blank"></iframe>
-            <!-- </div> -->
+                <iframe id="team-page" height="90%" width="100%" data-src="https://cosmiccoder96.github.io/aparoksha17/team/index.html" src="about:blank"></iframe>
+             </div> 
         </div>
         <div id="animatedModal2">
             <row>
@@ -1221,6 +1221,7 @@ $(document).ready(function(){
         height:'100%', 
         top:'0px', 
         left:'0px', 
+        overflow: 'hidden',
         beforeOpen: function() {
 
             var children = $(".thumb");
@@ -1264,6 +1265,29 @@ $(document).ready(function(){
         }
     });
     $("#hint-dock").animatedModal({
+                modalTarget:'hint',
+
+        color:'white',
+        beforeOpen: function() {
+
+            var children = $(".thumb");
+            var index = 0;
+
+            function addClassNextChild() {
+                if (index == children.length) return;
+                children.eq(index++).show().velocity("transition.swoopIn", { opacity:1, stagger: 250 });
+                window.setTimeout(addClassNextChild, 200);
+            }
+
+            addClassNextChild();
+
+        },
+        afterClose: function() {
+          $(".thumb").hide();
+              
+        }
+    });
+    $("#hint-list").animatedModal({
                 modalTarget:'hint',
 
         color:'white',
