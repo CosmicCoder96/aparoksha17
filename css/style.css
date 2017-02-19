@@ -877,8 +877,8 @@ li.system-menu > a {
   background: cyan;
   /*border:2px solid #AFAFAF;*/
   border-radius: 3px;
-  box-shadow: 2px 1px 4px 0px #AFAFAF; 
-  width: 100px; 
+  box-shadow: 2px 1px 4px 0px #AFAFAF;
+  width: 100px;
   height: 100px;
   transition: width .2s, height .2s;
 }
@@ -915,9 +915,9 @@ li.system-menu > a {
 }
 
 
-.window .window-content .grid-item--width2 { 
+.window .window-content .grid-item--width2 {
   background: purple;
-  width: 220px; 
+  width: 220px;
   height: 220px;
 }
 
@@ -1573,7 +1573,7 @@ li.system-menu > a {
   text-align:center;
   margin-top:40px;
     color:black;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
 
   z-index: 10000;
 }
@@ -1683,10 +1683,10 @@ li.system-menu > a {
 
         -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
   /*        animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-    
+
 */
     @-webkit-keyframes spin {
-        0%   { 
+        0%   {
             -webkit-transform: rotateY(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
             -ms-transform: rotateY(0deg);  /* IE 9 */
             transform: rotateY(0deg);  /* Firefox 16+, IE 10+, Opera */
@@ -1698,7 +1698,7 @@ li.system-menu > a {
         }
     }
     @keyframes spin {
-        0%   { 
+        0%   {
             -webkit-transform: rotateY(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
             -ms-transform: rotateY(0deg);  /* IE 9 */
             transform: rotateY(0deg);  /* Firefox 16+, IE 10+, Opera */
@@ -1736,7 +1736,7 @@ li.system-menu > a {
             -ms-transform: translateX(-100%);  /* IE 9 */
                 transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
                 transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
 
@@ -1745,13 +1745,13 @@ li.system-menu > a {
             -ms-transform: translateX(100%);  /* IE 9 */
                 transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
 
--webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
-    
+
     .loaded #loader {
         opacity: 0;
-        -webkit-transition: all 0.3s ease-out;  
+        -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
     }
     .loaded #loader-wrapper {
@@ -1761,26 +1761,26 @@ li.system-menu > a {
             -ms-transform: translateY(-100%);  /* IE 9 */
                 transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.3s 1s ease-out;  
+        -webkit-transition: all 0.3s 1s ease-out;
                 transition: all 0.3s 1s ease-out;
     }
-    
-  
+
+
 
     #content {
         margin: 0 auto;
         padding-bottom: 50px;
         width: 80%;
         max-width: 978px;
-    }  
+    }
 
 
 
 
   /* ========================
-  ******* STARS ************* 
+  ******* STARS *************
   =========================== */
-  
+
 #stars {
   width: 1px;
   height: 1px;
@@ -1843,9 +1843,9 @@ li.system-menu > a {
   }
 }
  /* ========================
-  ******* STARS ************* 
+  ******* STARS *************
   =========================== */
-  
+
 /*Event Modal*/
 .event-name{
   font-weight:900;font-size: 4em;
@@ -1874,7 +1874,7 @@ li.system-menu > a {
   margin-top: 1em;
   margin-bottom: 0.4em;
   font-family: 'Lobster';
-  border-bottom: 7px solid SkyBlue;
+  border-bottom: 2.5px solid #1e3191;
 }
 
 .event-organiser-header{
@@ -2403,4 +2403,12 @@ body {
 
 .pace.pace-inactive {
   display: none;
+}
+
+
+.overalls {
+  margin-top:5vmin;
+  /*padding: 20vmin;*/
+  height: 15vmin;
+  text-align:center;
 }
