@@ -605,7 +605,7 @@ li.system-menu > a {
   transition: .2s;
   -webkit-transition-property: scale, width, height, left, top, opacity;
   transition-property: scale, width, height, left, top, opacity;
-  width: 90vw;
+  width: 100vw;
   z-index: 0;
 }
 .window.window-closed {

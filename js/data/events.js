@@ -72,7 +72,8 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         coorganiser: 'Sahil Hindwani',
         date: '23 March 17',
         location: 'CC3',
-        desc: 'Think you can solve any puzzle, have a penchant for riddles. Here\'s a chance to prove it. Presenting you Perplexus, the Annual Online Treasure Hunt, better than ever before .' 
+        desc: 'Think you can solve any puzzle, have a penchant for riddles. Here\'s a chance to prove it. Presenting you Treasure Hunt, the Annual Treasure Hunt, better than ever before .',
+        short_desc: 'Presenting you Treasure Hunt, the Annual Treasure Hunt, better than ever before .'
     },
     {
         id: 'fifa',
@@ -93,5 +94,25 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         location: 'CC3',
         desc: 'See, carnivals have fun of all sorts, and since this is a carnival coordinated by some very hardcore gamers, we bring to your service the game of the generation -Counter Strike. Make your childhood dreams come true by competing for the prize in this multiple round Battle to the end. Watch how the mainstay of many gamersushers in an arena of competition, intelligence and battle tactics. Bring your A-game, because your skills are your only hope to survive this battlefield. ',
         short_desc: 'Bring your A-game, because your skills are your only hope to survive this battlefield. '
+    },
+    {
+        id: 'android',
+        name: 'Android Games',
+        organiser: 'Abhishek Deora',
+        coorganiser: 'Sahil Hindwani',
+        date: '23-25 March 17',
+        location: 'CC3',
+        desc: 'Ever been so bored in a class or an event that you joined a random lan and started playing? For all the android game adddicts we present to you a heaven on earth. In the carnival of dreams, test out your gaming abilities again people of your kind. You\'re the best in your trade? Prove it and win exciting prizes. ',
+        short_desc: ' For all the android game adddicts we present to you a heaven on earth. In the carnival of dreams, test out your gaming abilities again people of your kind. You\'re the best in your trade? Prove it and win exciting prizes. '
+    },
+    {
+        id: 'stegolica',
+        name: 'Stegolica',
+        organiser: 'Abhishek Deora',
+        coorganiser: 'Sahil Hindwani',
+        date: '23-25 March 17',
+        location: 'CC3',
+        desc: 'A delight for all the aspiring hackers and crackers , Stegolica is an online Steganography competition which has one of the most toughest competitors trying to prove themselves. Participate and bring out the Alan Turing inside out you. Steganography is the practice of concealing a file,message,image or video within another file,message,image or video. In every question there will be something hidden (a key) and you have to find out what it is, To go to the next level ',
+        short_desc: 'Stegolica is an online Steganography competition which has one of the most toughest competitors trying to prove themselves.'
     }
 ];
