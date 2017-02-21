@@ -2416,31 +2416,6 @@ body {
 
 /*web developers*/
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/bedge_grunge.png) repeat;
-}
-
-body {
-  color: #222;
-}
-
-.intro {
-  text-align: center;
-  display: block;
-  padding-bottom: 0.5em;
-  margin: 0 auto;
-}
-
-h1 {
-  font-family: "Oleo Script";
-  text-shadow: white 1px 1px 0;
-  color: #274b6a;
-}
-
 .container {
   width: 90%;
   margin: 0 auto;
