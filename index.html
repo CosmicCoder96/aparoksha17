@@ -549,21 +549,36 @@
                         </p>
                     </div>
                     <div class="event-image col-sm-4 col-md-4 col-lg-4"><img src="images/mun.jpg" width="300" height="260"></div>
+                    <div id="circle-menu" class="">
+                        <a href="#" data-open="" data-close="CLOSE" class="menu-trigger"> <i class="fa fa-power-off" aria-hidden="true" style="visibility: visible;"></i>
+                        </a>
+                        <ul>
+                            <li><a href="WebD/" target="_blank" class="link"> WebD</a></li>
+                            <li><a href="AppD/" target="_blank" class="link"> AppD</a></li>
+                            <li><a href="Foss/" target="_blank" class="link"> FOSS</a></li>
+                            <li><a href="CompetitiveCoding/" target="_blank" class="link" style="font-size:1.8em;line-height:0.8;"> Competitive<br>Coding</a></li>
+                            <li><a href="Graphics/" target="_blank" class="link"> Graphics</a></li>
+                            <li><a href="Networking/" target="_blank" class="link"> Networking</a></li>
+                            <li><a href="Tesla/" target="_blank" class="link"> Tesla</a></li>
 
+
+                        </ul>
+                    </div>
                 </row>
-            </div>
-        </div>
-        <div id="hint">
-            <div id="closebt-container" class="close-hint">
-                <img class="closebt" src="images/closebt.svg">
-            </div>
 
-            <div id="modal-container" style="height: 90%; padding: 20px">
-                <iframe width="100%" height="100%" src="https://drive.google.com/file/d/0B7IJhC8PF-c9RzFLRjZkYXVsdkE/preview" frameborder="0"
-                    allowfullscreen></iframe>
             </div>
-        </div>
-        <!-- <div class="window finder window-closed" id="finder">
+            <div id="hint">
+                <div id="closebt-container" class="close-hint">
+                    <img class="closebt" src="images/closebt.svg">
+                </div>
+
+
+                <div id="modal-container" style="height: 90%; padding: 20px">
+                    <iframe width="100%" height="100%" src="https://drive.google.com/file/d/0B7IJhC8PF-c9RzFLRjZkYXVsdkE/preview" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- <div class="window finder window-closed" id="finder">
         <div class="window-header">
             <div class="window-actions">
                 <ul class="window-controls">
@@ -1517,6 +1532,13 @@
 
 
         <script type="text/javascript">
+        (function() {
+              $('.menu-trigger').on('click', function(e) {
+                e.preventDefault();
+                return $('#circle-menu').toggleClass('open');
+              });
+
+            }).call(this);
             $('.grid').packery({
                 // options
                 itemSelector: '.grid-item',
