@@ -821,7 +821,7 @@
                         </nav>
                     </aside>
                     <div class="content-ctr">
-                        <div class="window-content grid">
+                        <div class="window-content">
                             <div class="gutter-sizer"></div>
                             <div class="grid-item">
                                 <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
@@ -1440,6 +1440,9 @@
 
                 $.each(flagshipEvents, function(index, event) {
                     console.log(event.id);
+                    var $grid = $('.grid').packery({
+                        itemSelector: '.grid-item'
+                    });
                     $('#hint').before(' \
         <div id="' + event.id + '"> \
         <row> \
@@ -1492,17 +1495,17 @@
     </div> \
     '
                     );
-                    $('#flagship').append(' <a href="#' + event.id + '" id="pop-'+ event.id +'"><div class="grid-item grid-item--width2" > \
+                    $items = $(' <a href="#' + event.id + '" id="pop-'+ event.id +'"><div class="grid-item grid-item--width2" > \
                     <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " \
                         src="images/events/'+ event.id +'.jpg"> \
-                        <div class="btn1"> \
-                            More Details \
-                        </div> \
-                        <div class="desc"> \
-                            A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu \
-                        </div> \
-                </div></a>');
-            
+                        </div></a>');
+                    $grid.append($items)
+                    .packery( 'appended', $items );
+                    
+                    // setTimeout(function() {
+                    //         $grid.packery('layout');
+                    //     }, 300);
+
                     $("#pop-" + event.id).animatedModal({
                         modalTarget: event.id,
 
