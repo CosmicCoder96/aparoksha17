@@ -228,12 +228,12 @@
                 <li>
                     <a href="#nolink">Events</a>
                     <ul class="dropdown">
-                        <li><a id="pop-perplexus" href="#perplexus">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
-                        <li><a id="pop-demo" href="#demo">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
-                        <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="finder-topbot" href="#topbot">TopBot<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="finder-cfresh" href="#cfresh">C-Fresh<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="finder-alkhwarizm" href="#alkhwarizm">Alkhwarizm<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
                         <li class="separator"></li>
-                        <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
-                        <li><a href="#nolink">Option<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="finder-hint_event" href="#hint_event">Hack in the north<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
+                        <li><a id="finder-humblefoolcup" href="#humblefoolcup">Humblefoolcup<span class="shortcut">⇧⇪⌘⌥⌃</span></a></li>
                         <li class="has-sub">
                             <a href="#nolink">Has Sub</a>
                             <ul class="dropdown child-nav">
@@ -1520,6 +1520,32 @@
                 </div>');*/
 
                     $("#pop-" + event.id).animatedModal({
+                        modalTarget: event.id,
+
+                        color: "white",
+                        beforeOpen: function() {
+
+                            var children = $(".thumb");
+                            var index = 0;
+
+                            function addClassNextChild() {
+                                if (index == children.length) return;
+                                children.eq(index++).show().velocity("transition.swoopIn", {
+                                    opacity: 1,
+                                    stagger: 250
+                                });
+                                window.setTimeout(addClassNextChild, 200);
+                            }
+
+                            addClassNextChild();
+
+                        },
+                        afterClose: function() {
+                            $(".thumb").hide();
+
+                        }
+                    });
+                    $("#finder-" + event.id).animatedModal({
                         modalTarget: event.id,
 
                         color: "white",
