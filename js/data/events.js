@@ -8,7 +8,8 @@ var flagshipEvents = [{
     desc: 'Alkhwarizm is the annual coding event of IIIT’s Techfest Aparoksha. It is a prestigious \
 programming contest which brings you an opportunity to unleash your coding skills and solve \
 algorithmic problems. It is the place where optimization and proficiency matters, skills matter, hard \
-work matters, trying till the very end matters and winning loads of cash prizes matter !'
+work matters, trying till the very end matters and winning loads of cash prizes matter !',
+    short_desc: 'a prestigious programming contest which brings you an opportunity to unleash your coding skills and solve algorithmic problems '
     },
     {
         id: 'cfresh',
@@ -17,7 +18,9 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         coorganiser: 'Sahil Hindwani',
         date: '23-25 March 17',
         location: 'IIITA',
-        desc: 'C-Fresh is the annual coding event specially designed to bring out the talent in the first year students. Exciting prizes await you !! '
+        desc: 'C-Fresh is the annual coding event specially designed to bring out the talent in the first year students. Exciting prizes await you !! ',
+        short_desc: 'annual coding event specially designed to bring out the talent in the first year students. Exciting prizes await you !!  '
+
     },
     {
         id: 'humblefoolcup',
@@ -26,7 +29,9 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         coorganiser: 'Sahil Hindwani',
         date: '23-25 March 17',
         location: 'Topcoder',
-        desc: 'Topcoder in collaboration with Indian Institute of Information Technology Allahabad is excited to announce Humblefool Cup Algorithm Match in the fond memory of Harsha Suryanarayana (humblefool), one of the best Programmer of India.'
+        desc: 'Topcoder in collaboration with Indian Institute of Information Technology Allahabad is excited to announce Humblefool Cup Algorithm Match in the fond memory of Harsha Suryanarayana (humblefool), one of the best Programmer of India.',
+        short_desc: 'Humblefool Cup is a prestigious Algorithm Match in the fond memory of Harsha Suryanarayana (humblefool), one of the best Programmer of India. '
+        
     },
     {
         id: 'hint_event',
@@ -35,7 +40,9 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         coorganiser: 'Saptak Sengupta',
         date: '23-25 March 17',
         location: 'CC3-IIITA',
-        desc: 'Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.'
+        desc: 'Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. Hack In The North is open for university and high school students.',
+        short_desc: 'Hack In The North is the biggest student held hackathon in India. 300 students from all across India will come together in IIIT Allahabad this March and spend 36 hours building projects they are passionate about. '
+        
     },
     {
         id: 'topbot',
@@ -44,6 +51,8 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         coorganiser: 'Sahil Hindwani',
         date: '23-25 March 17',
         location: 'IIITA',
-        desc: 'Aparoksha presents to you TopBot, a two round robot building contest. Call it a test of all the features of your bot, viz. mechanical, electronics and coding.This is the flagship event in electronics so you just can’t afford to miss this one out. This year, two interesting themes await you. Bolt, an obstacle evading contest will require your bot to overcome all the hindrances put in front of it in order to stand above the rest. The second theme Jarvis is a restricted contest only for first and second year students based on the line follower theme. So come in, show your engineering prowess and grab hold of the various prizes up for grabs.'
+        desc: 'Aparoksha presents to you TopBot, a two round robot building contest. Call it a test of all the features of your bot, viz. mechanical, electronics and coding.This is the flagship event in electronics so you just can’t afford to miss this one out. This year, two interesting themes await you. Bolt, an obstacle evading contest will require your bot to overcome all the hindrances put in front of it in order to stand above the rest. The second theme Jarvis is a restricted contest only for first and second year students based on the line follower theme. So come in, show your engineering prowess and grab hold of the various prizes up for grabs.',
+        short_desc: 'TopBot, a two round robot building contest. Call it a test of all the features of your bot, viz. mechanical, electronics and coding.'
+        
     }
 ];
