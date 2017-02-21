@@ -958,42 +958,52 @@
             </div>
         </div>
         <div class="window window-closed" id="textedit">
-            <div class="window-content grid" style="background: transparent" id="flagship">
+            <div class="window-content grid" style="background: transparent; position: relative; height: 0px;" id="flagship">
                 <div class="gutter-sizer"></div>
-                <div class="grid-item">
+                <div class="grid-item grid-item--width2">
                     <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
-                        style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); "
-                        src="http://effe.org.in/images/drama/innovation.jpg">
-                    <div class="btn1">
-                        More Details
-                    </div>
-                    <div class="desc">
-                        A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
-                    </div>
+                        style="transition-duration: 0.4s; transition-delay: 0.0479319s; filter: grayscale(1); transform: scale(1);"
+                        src="images/events/alkhwarizm.jpg">
+                    <a href="#alkhwarizm" id="pop-alkhwarizm">
+                        <div class="btn1"> More Details </div>
+                    </a>
+                    <div class="desc"> undefined </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
+                        style="transition-duration: 0.4s; transition-delay: 0.0479319s; filter: grayscale(1); transform: scale(1);"
+                        src="images/events/cfresh.jpg">
+                    <a href="#cfresh" id="pop-cfresh">
+                        <div class="btn1"> More Details </div>
+                    </a>
+                    <div class="desc"> undefined </div>
                 </div>
                 <div class="grid-item grid-item--width2">
                     <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
                         style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); "
-                        src="http://effe.org.in/images/gamers_asylum/cs.jpg">
-                    <div class="desc">
-                        A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
-                    </div>
+                        src="images/events/humblefoolcup.jpg">
+                    <a href="#humblefoolcup" id="pop-humblefoolcup">
+                        <div class="btn1"> More Details </div>
+                    </a>
+                    <div class="desc"> undefined </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
+                        style="transition-duration: 0.4s; transition-delay: 0.0479319s; filter: grayscale(1); transform: scale(1);"
+                        src="images/events/hint_event.jpg">
+                    <a href="#hint_event" id="pop-hint_event">
+                        <div class="btn1"> More Details </div>
+                    </a>
+                    <div class="desc"> undefined </div>
                 </div>
                 <div class="grid-item grid-item--width2">
                     <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
                         style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); "
-                        src="http://effe.org.in/images/gamers_asylum/cs.jpg">
-                    <div class="desc">
-                        A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
-                    </div>
-                </div>
-                <div class="grid-item grid-item--width2">
-                    <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
-                        style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); "
-                        src="http://effe.org.in/images/gamers_asylum/cs.jpg">
-                    <div class="desc">
-                        A small Description Goes here huytt jadhf adhhfhgaus sdjs sdjhfgya fdjhauygasd fhsdgu
-                    </div>
+                        src="images/events/topbot.jpg">
+                    <a href="#topbot" id="pop-topbot">
+                        <div class="btn1"> More Details </div>
+                    </a>
+                    <div class="desc"> undefined </div>
                 </div>
             </div>
         </div>
@@ -1495,16 +1505,19 @@
     </div> \
     '
                     );
-                    $items = $(' <a href="#' + event.id + '" id="pop-'+ event.id +'"><div class="grid-item grid-item--width2" > \
+
+                    //Do not delete this at any condition, Naa matlab naa.
+                   /* $('#flagship').append(' <div class="grid-item grid-item--width2" > \
                     <img onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;" style="transition-duration: 0.4s; transition-delay: 0.0479319s;  -webkit-filter: grayscale(1); transform: scale(1); " \
                         src="images/events/'+ event.id +'.jpg"> \
-                        </div></a>');
-                    $grid.append($items)
-                    .packery( 'appended', $items );
-                    
-                    // setTimeout(function() {
-                    //         $grid.packery('layout');
-                    //     }, 300);
+                        <a href="#' + event.id + '" id="pop-'+ event.id +'"> \
+                        <div class="btn1"> \
+                            More Details \
+                        </div></a> \
+                        <div class="desc"> \
+                            '+ event.short_desc + ' \
+                        </div> \
+                </div>');*/
 
                     $("#pop-" + event.id).animatedModal({
                         modalTarget: event.id,
