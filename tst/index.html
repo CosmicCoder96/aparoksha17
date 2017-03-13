@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Registration</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+  <div class="row">
+    <form class="col s12" id="form1" action="#">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="event_name" type="text" class="validate">
+          <label for="event_name">Event Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="date" type="date" class="validate" title="date">
+        </div>
+        <div class="input-field col s3">
+          <input id="time" type="time" class="validate" title="time">
+        </div>
+        <div class="input-field col s3">
+          <input id="loc" type="text" class="validate">
+          <label for="loc">Location</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="prize" type="number" class="validate">
+          <label for="prize">Expected Prize Money</label>
+        </div>
+      </div>
+      <div class="row">
+	    <div class="input-field col s6">
+	      <input id="org1" type="text" class="validate">
+          <label for="org1">Organiser</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="org2" type="number" class="validate">
+          <label for="org2">Co-organiser</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="short_desc" type="text" class="validate">
+          <label for="short_desc">Short Description</label>
+        </div>
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <textarea id="det_desc" class="materialize-textarea" data-length="400"></textarea>
+            <label for="det_desc">Detailed Description</label>
+          </div>
+      </div>
+      <input type="submit" value="submit">
+    </form>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
