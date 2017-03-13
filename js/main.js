@@ -316,92 +316,92 @@ var windowThumbSize = function () {
     $('.album-photos').addClass('grid' + $('.thumb-size-slider').slider('value'));
 };
 windowThumbSize();
-var baseUrl = 'https://api.flickr.com/services/rest/?method=';
-var apiKey = '8563c61491f61f1cf1055ac503a9b86f';
-var userID = '14843363@N03';
-var src;
-var getPhotoAlbums = function () {
-    var getListUrl = baseUrl + 'flickr.photosets.getList' + '&user_id=' + userID + '&api_key=' + apiKey + '&format=json&jsoncallback=?';
-    $.getJSON(getListUrl, function (data) {
-        $.each(data.photosets.photoset, function (i, item) {
-            var albumThumbSrc = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.primary + '_' + item.secret + '_s.jpg';
-            $('<li>' + '<a href=\'#album-' + item.id + '\'>' + '<i class=\'icon-sidebar icon-album\'><img src=\'' + albumThumbSrc + '\' alt=\'Album thumbnail for ' + item.title._content + '\'/></i>' + item.title._content + '' + '</a>' + '</li>').appendTo('.photo-albums');
-        });
-    }).done(function () {
-        var $activeAlbum = $('.active a', '.photo-albums');
-        var $selectedTitle = $activeAlbum.text();
-        $('.album-title').text($selectedTitle);
-        var selectedAlbumID = $activeAlbum.attr('href').replace('#album-', '');
-        var displaySelectedAlbum = function () {
-            if (selectedAlbumID === 'all') {
-                getAllPhotos();
-            } else {
-                getPhotos(selectedAlbumID);
-            }
-        };
-        displaySelectedAlbum();
-        $('a', '.photo-albums').on('click', function (e) {
-            e.preventDefault();
-            selectedAlbumID = $(this).attr('href').replace('#album-', '');
-            displaySelectedAlbum();
-            $selectedTitle = $(this).text();
-            $(this).parents('.window').find('.album-title').text($selectedTitle);
-        });
-        selectableSidebarNav();
-    });
-};
-getPhotoAlbums();
-var getPhotos = function (photosetid) {
-    var getPhotosUrl = baseUrl + 'flickr.photosets.getPhotos' + '&photoset_id=' + photosetid + '&user_id=' + userID + '&api_key=' + apiKey + '&format=json&jsoncallback=?';
-    $('.album-photos').empty();
-    $.getJSON(getPhotosUrl, function (data) {
-        $.each(data.photoset.photo, function (i, item) {
-            src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
-            $('<li class=\'photo\'><div class=\'photo-wrapper\'><span class=\'image\'><img src=\'' + src + '\' alt=\'\'/></span></div></li>').appendTo('.album-photos');
-        });
-        $('.photo-count').text(data.photoset.total + ' Photos');
-    }).done(function () {
-        selectedPhoto();
-    });
-};
-var getAllPhotos = function () {
-    var getPhotosUrl = baseUrl + 'flickr.people.getPublicPhotos' + '&user_id=' + userID + '&api_key=' + apiKey + '&per_page=500&format=json&jsoncallback=?';
-    $('.album-photos').empty();
-    $.getJSON(getPhotosUrl, function (data) {
-        $.each(data.photos.photo, function (i, item) {
-            src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
-            $('<li class=\'photo\'><div class=\'photo-wrapper\'><span class=\'image\'><img src=\'' + src + '\' alt=\'\'/></span></div></li>').appendTo('.album-photos');
-        });
-        $('.photo-count').text(data.photos.total + ' Photos');
-    }).done(function () {
-        selectedPhoto();
-    });
-};
-var selectedPhoto = function () {
-    $('.photo').on('click', function (e) {
-        if (!$(this).hasClass('photo__selected')) {
-            $('.photo__selected').removeClass('photo__selected');
-            $(this).addClass('photo__selected');
-            zoomSelectedPhoto();
-        }
-    });
-};
-var zoomSelectedPhoto = function () {
-    $('.photo__selected').on('dblclick', function () {
-        if ($(this).hasClass('photo__zoomed')) {
-            $(this).removeClass('photo__zoomed');
-            $('.image-large').remove();
-        } else {
-            $('<img/>').on('load', function () {
-                console.log('image loaded correctly');
-            }).on('error', function () {
-                console.log('error loading image');
-            }).attr('src', $(this).attr('src'));
-            $(this).addClass('photo__zoomed');
-            var selectedImgSrc = $(this).find('img').attr('src');
-            var largeImgSrc = selectedImgSrc.replace('_n.jpg', '_h.jpg');
-            $(this).find('.photo-wrapper').append('<span class=\'image-large\'><img src=\'' + largeImgSrc + '\' alt=\'\'/></span>');
-        }
-    });
-};
-selectedPhoto();
+// var baseUrl = 'https://api.flickr.com/services/rest/?method=';
+// var apiKey = '8563c61491f61f1cf1055ac503a9b86f';
+// var userID = '14843363@N03';
+// var src;
+// var getPhotoAlbums = function () {
+//     var getListUrl = baseUrl + 'flickr.photosets.getList' + '&user_id=' + userID + '&api_key=' + apiKey + '&format=json&jsoncallback=?';
+//     $.getJSON(getListUrl, function (data) {
+//         $.each(data.photosets.photoset, function (i, item) {
+//             var albumThumbSrc = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.primary + '_' + item.secret + '_s.jpg';
+//             $('<li>' + '<a href=\'#album-' + item.id + '\'>' + '<i class=\'icon-sidebar icon-album\'><img src=\'' + albumThumbSrc + '\' alt=\'Album thumbnail for ' + item.title._content + '\'/></i>' + item.title._content + '' + '</a>' + '</li>').appendTo('.photo-albums');
+//         });
+//     }).done(function () {
+//         var $activeAlbum = $('.active a', '.photo-albums');
+//         var $selectedTitle = $activeAlbum.text();
+//         $('.album-title').text($selectedTitle);
+//         var selectedAlbumID = $activeAlbum.attr('href').replace('#album-', '');
+//         var displaySelectedAlbum = function () {
+//             if (selectedAlbumID === 'all') {
+//                 getAllPhotos();
+//             } else {
+//                 getPhotos(selectedAlbumID);
+//             }
+//         };
+//         displaySelectedAlbum();
+//         $('a', '.photo-albums').on('click', function (e) {
+//             e.preventDefault();
+//             selectedAlbumID = $(this).attr('href').replace('#album-', '');
+//             displaySelectedAlbum();
+//             $selectedTitle = $(this).text();
+//             $(this).parents('.window').find('.album-title').text($selectedTitle);
+//         });
+//         selectableSidebarNav();
+//     });
+// };
+// getPhotoAlbums();
+// var getPhotos = function (photosetid) {
+//     var getPhotosUrl = baseUrl + 'flickr.photosets.getPhotos' + '&photoset_id=' + photosetid + '&user_id=' + userID + '&api_key=' + apiKey + '&format=json&jsoncallback=?';
+//     $('.album-photos').empty();
+//     $.getJSON(getPhotosUrl, function (data) {
+//         $.each(data.photoset.photo, function (i, item) {
+//             src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
+//             $('<li class=\'photo\'><div class=\'photo-wrapper\'><span class=\'image\'><img src=\'' + src + '\' alt=\'\'/></span></div></li>').appendTo('.album-photos');
+//         });
+//         $('.photo-count').text(data.photoset.total + ' Photos');
+//     }).done(function () {
+//         selectedPhoto();
+//     });
+// };
+// var getAllPhotos = function () {
+//     var getPhotosUrl = baseUrl + 'flickr.people.getPublicPhotos' + '&user_id=' + userID + '&api_key=' + apiKey + '&per_page=500&format=json&jsoncallback=?';
+//     $('.album-photos').empty();
+//     $.getJSON(getPhotosUrl, function (data) {
+//         $.each(data.photos.photo, function (i, item) {
+//             src = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_n.jpg';
+//             $('<li class=\'photo\'><div class=\'photo-wrapper\'><span class=\'image\'><img src=\'' + src + '\' alt=\'\'/></span></div></li>').appendTo('.album-photos');
+//         });
+//         $('.photo-count').text(data.photos.total + ' Photos');
+//     }).done(function () {
+//         selectedPhoto();
+//     });
+// };
+// var selectedPhoto = function () {
+//     $('.photo').on('click', function (e) {
+//         if (!$(this).hasClass('photo__selected')) {
+//             $('.photo__selected').removeClass('photo__selected');
+//             $(this).addClass('photo__selected');
+//             zoomSelectedPhoto();
+//         }
+//     });
+// };
+// var zoomSelectedPhoto = function () {
+//     $('.photo__selected').on('dblclick', function () {
+//         if ($(this).hasClass('photo__zoomed')) {
+//             $(this).removeClass('photo__zoomed');
+//             $('.image-large').remove();
+//         } else {
+//             $('<img/>').on('load', function () {
+//                 console.log('image loaded correctly');
+//             }).on('error', function () {
+//                 console.log('error loading image');
+//             }).attr('src', $(this).attr('src'));
+//             $(this).addClass('photo__zoomed');
+//             var selectedImgSrc = $(this).find('img').attr('src');
+//             var largeImgSrc = selectedImgSrc.replace('_n.jpg', '_h.jpg');
+//             $(this).find('.photo-wrapper').append('<span class=\'image-large\'><img src=\'' + largeImgSrc + '\' alt=\'\'/></span>');
+//         }
+//     });
+// };
+// selectedPhoto();
