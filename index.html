@@ -1373,7 +1373,7 @@
                     </a>
                 </li>
                 <li class="app">
-                    <a id="hint-dock" href="#hint">
+                    <a id="hint-dock" href = "#nolink" onclick ="openInNewTab('https://www.hackinthenorth.com');" target="_blank">
                         <span class="app-icon"><img src="./images/icons/HINT.png" alt="HINT"/></span>
                         <span class="app-title">Hack In The North</small></span>
                     </a>
@@ -2016,6 +2016,10 @@ $.each(generalEvents, function(index, event)
     window.onload = function() {
         $('body').addClass('loaded');
     };
+    function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
 </script>
 </main>
 
