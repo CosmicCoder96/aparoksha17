@@ -116,3 +116,20 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         short_desc: 'Stegolica is an online Steganography competition which has one of the most toughest competitors trying to prove themselves.'
     }
 ];
+
+var generalEvents = [
+    {
+        id : 'posterMania',
+        name: "PosterMania",
+        contact1 : '8989118413',
+        contact2 : '8319473031',
+        date: "2017-03-24",
+        time: "20:00",
+        location: "CC-3",
+        prize: "3000",
+        organiser: "Abhishek Sharma ",
+        coorganiser: "Aditya Powale",
+        short_desc: "Digital Design Competition",
+        desc: " \u201cAll the problems of the world could be settled easily if men were only willing to think.\u201d But, thinking is often the hardest work of all. As Aparoksha'17 revives the design culture, it is important that we embrace thinking as well as making. So put on your creative hats for the biggest design competition of Aparoksha. 90 minutes is all you have, and sky is the limit. Create something magical!"
+    }
+];
