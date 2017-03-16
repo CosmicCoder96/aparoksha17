@@ -419,6 +419,23 @@
                     
             </div>
         </div>
+        <div id="registerModal">
+            <div id="closebt-container" class="close-registerModal">
+                <img class="closebt" src="images/closebt.svg">
+            </div>
+
+            <div id="modal-container" style="height:83%" class="col-sm-12 col-md-12 col-lg-12">
+
+
+                <!--    <div class="thumb col-lg-6" style="display:none;">
+                    <div class="contact"><img src=""></div>
+                    <div class ="desc">Abhishek Deora <br> +91 9938377448 </div>
+                    <div class="contact"><img src=""></div>
+                    <div class ="desc">Sahil Hindwani <br> +91 9938377448 </div>
+                </div> -->
+                <iframe id="register-page" height="90%" width="100%" data-src="https://aparoksha.iiita.ac.in/register/" src="about:blank"></iframe>
+            </div>
+        </div>
         <div id="animatedModal3">
             <div id="closebt-container" class="close-animatedModal3">
                 <img class="closebt" src="images/closebt.svg">
@@ -933,7 +950,7 @@
                 </div>
             </div>
         </div> -->
-        <div class="window safari window-closed" id="safari">
+<!--         <div class="window safari window-closed" id="safari">
             <div class="window-header">
                 <div class="window-actions combined-actions">
                     <ul class="window-controls">
@@ -974,7 +991,7 @@
             <div class="safari-body">
                 <iframe src="http://google.com" frameborder="0"></iframe>
             </div>
-        </div>
+        </div> -->
         <div class="window window-closed" id="finder">
                 <div class="window-content grid" style="background: transparent; position: relative; height: 0px;" id="flagship">
                     <div class="gutter-sizer"></div>
@@ -1380,9 +1397,9 @@
                 </a>
             </li> -->
                 <li class="app">
-                    <a href="#safari">
-                        <span class="app-icon"><img src="./images/icons/safari.png" alt="Safari App Icon"/></span>
-                        <span class="app-title">Safari</span>
+                    <a id ="register" href="#registerModal">
+                        <span class="app-icon"><img src="./images/icons/register.png" alt="Safari App Icon"/></span>
+                        <span class="app-title">Register!</span>
                     </a>
                 </li>
                 <li class="app">
@@ -1468,6 +1485,12 @@
                 iframe.attr("src", iframe.data("src"));
                 console.log("hi");
             });
+            $("#register").click(function() {
+                var iframe = $('#register-page');
+                iframe.attr("src", iframe.data("src"));
+                console.log("hi again!!");
+
+            });
             //$('#sponsors').animatedModal();
             $(document).ready(function() {
                 $("#sponsors").animatedModal({
@@ -1497,6 +1520,36 @@
                 });
                 $("#team").animatedModal({
                     modalTarget: 'animatedModal3',
+                    color: 'white',
+                    width: '100%',
+                    height: '100%',
+                    top: '0px',
+                    left: '0px',
+                    overflow: 'hidden',
+                    beforeOpen: function() {
+
+                        var children = $(".thumb");
+                        var index = 0;
+
+                        function addClassNextChild() {
+                            if (index == children.length) return;
+                            children.eq(index++).show().velocity("transition.swoopIn", {
+                                opacity: 1,
+                                stagger: 250
+                            });
+                            window.setTimeout(addClassNextChild, 200);
+                        }
+
+                        addClassNextChild();
+
+                    },
+                    afterClose: function() {
+                        $(".thumb").hide();
+
+                    }
+                });
+                $("#register").animatedModal({
+                    modalTarget: 'registerModal',
                     color: 'white',
                     width: '100%',
                     height: '100%',
