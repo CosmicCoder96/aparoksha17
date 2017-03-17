@@ -1656,10 +1656,12 @@ li.system-menu > a {
 }
 .sponsor
 {
+  display: inline-block;
   width:15em;
   height:10em;
-  margin-top:8vh;
-  margin-left: 0;
+  margin-top:4vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 .contact
 {
@@ -2576,4 +2578,8 @@ body {
   overflow-y: hidden;
 }
 
+#animatedModal h3 {
+  font-size: 30px;
+  color: silver;
+}
 
