@@ -146,20 +146,20 @@ var generalEvents = [
         short_desc: "Digital Design Competition",
         desc: " \u201cAll the problems of the world could be settled easily if men were only willing to think.\u201d But, thinking is often the hardest work of all. As Aparoksha'17 revives the design culture, it is important that we embrace thinking as well as making. So put on your creative hats for the biggest design competition of Aparoksha. 90 minutes is all you have, and sky is the limit. Create something magical!"
     },
-    {
-        id :"lan",
-        name: "Lang Challenge",
-        date: "2017-03-25",
-        contact1: "9895503662",
-        contact2: "8604616966",
-        time: "12:00",
-        location: "CC3",
-        prize: "4500",
-        organiser: "Mubaris Hassan",
-        coorganiser: "Ashwin Aishvarya Vardhan",
-        short_desc: "Solve problems in random programming language.",
-        desc: "A random language will be provided and tutorials relevant to this language will be provided. Candidates will be required to solve a set of problems within particular time interval.\n"
-    },
+//     {
+//         id :"lan",
+//         name: "Lang Challenge",
+//         date: "2017-03-25",
+//         contact1: "9895503662",
+//         contact2: "8604616966",
+//         time: "12:00",
+//         location: "CC3",
+//         prize: "4500",
+//         organiser: "Mubaris Hassan",
+//         coorganiser: "Ashwin Aishvarya Vardhan",
+//         short_desc: "Solve problems in random programming language.",
+//         desc: "A random language will be provided and tutorials relevant to this language will be provided. Candidates will be required to solve a set of problems within particular time interval.\n"
+//     },
     {
         id:"electrobuzz",
         name: "ELectroBuzz",
@@ -173,33 +173,33 @@ var generalEvents = [
         short_desc: "This Event will be based on IC\u2019s(IC 741 & IC 555) with simple circuits .This enthralling event is an excellent platform to prove your skills and brain in this field.analyze the Circuit and find the faulty Connections of the circuits.",
         desc: ""
     },
-    {
-        id:"googler",
-        name: "Mr. Googler",
-        date: "2017-03-24",
-        contact1: "8896733935",
-        time: "21:00",
-        location: "CC3-LAB",
-        prize: "1500",
-        organiser: "Mritunjay Chaudhary",
-        coorganiser: "Garima Gupta,Upasana Singh",
-        short_desc: "Tests your skill at googling",
-        desc: "Think you've got what it takes to Google your way out of intriguing scenarios? We've got just the event for you avid Googlers.\nSearch, think, disseminate, search again, until you find what it takes to get you to the prizes worth INR 1500.Show your Googling skill.\nQuestions will be subjective.\nYou can form team with maximum two members."
-    },
-    {
-        id: "technohive",
-        name: "Technohive ",
-        date: "",
-        contact1:"7839365693",
-        contact2:"7976761302",
-        time: "",
-        location: "cc-3  LAB ",
-        prize: "3000",
-        organiser: "Harsha Vardhan Reddy ",
-        coorganiser: "Rachit Parashar , Himanshul Patel",
-        short_desc: "it is an event which tests your electronis as well as your coding skills and general knowledge about science(mostly related with electronics).",
-        desc: "First round- we are going to conduct a separate test for ECE and IT people. For ECE people participants there will be a circuit given to make on bread board and for IT guys a code will be given to them u have to find errors.\n2nd round- common  round ,rapidfire round. participants will have 60 seconds to answer the questions.No. of correct answer will be basis of judgement. General question will be given related with electronics.\nVenue-  CC3\nRules-\n1. There  will be two members in each group.\n2. Tie in any round will be broken by the time of the submits the paper or given task.\n3. Phone ,scientific calculator would not be allowed  at the time of event,if used those team will be disqualified.\n4. You have to bring rough paper and pen for your own convenience.\n5. Teams should be registered before two days of first round. "
-    },
+//     {
+//         id:"googler",
+//         name: "Mr. Googler",
+//         date: "2017-03-24",
+//         contact1: "8896733935",
+//         time: "21:00",
+//         location: "CC3-LAB",
+//         prize: "1500",
+//         organiser: "Mritunjay Chaudhary",
+//         coorganiser: "Garima Gupta,Upasana Singh",
+//         short_desc: "Tests your skill at googling",
+//         desc: "Think you've got what it takes to Google your way out of intriguing scenarios? We've got just the event for you avid Googlers.\nSearch, think, disseminate, search again, until you find what it takes to get you to the prizes worth INR 1500.Show your Googling skill.\nQuestions will be subjective.\nYou can form team with maximum two members."
+//     },
+//     {
+//         id: "technohive",
+//         name: "Technohive ",
+//         date: "",
+//         contact1:"7839365693",
+//         contact2:"7976761302",
+//         time: "",
+//         location: "cc-3  LAB ",
+//         prize: "3000",
+//         organiser: "Harsha Vardhan Reddy ",
+//         coorganiser: "Rachit Parashar , Himanshul Patel",
+//         short_desc: "it is an event which tests your electronis as well as your coding skills and general knowledge about science(mostly related with electronics).",
+//         desc: "First round- we are going to conduct a separate test for ECE and IT people. For ECE people participants there will be a circuit given to make on bread board and for IT guys a code will be given to them u have to find errors.\n2nd round- common  round ,rapidfire round. participants will have 60 seconds to answer the questions.No. of correct answer will be basis of judgement. General question will be given related with electronics.\nVenue-  CC3\nRules-\n1. There  will be two members in each group.\n2. Tie in any round will be broken by the time of the submits the paper or given task.\n3. Phone ,scientific calculator would not be allowed  at the time of event,if used those team will be disqualified.\n4. You have to bring rough paper and pen for your own convenience.\n5. Teams should be registered before two days of first round. "
+//     },
     {
         id:"android",
         name: "Android Gamers' Asylum",
@@ -213,20 +213,20 @@ var generalEvents = [
         short_desc: "Fun Filled Bonanza of the most popular Android Games like Mini Militia",
         desc: "The fun thrilled bonanza of gaming is back !! Flaunt your moves and grooves this Aparoksha in the epic battleground of the most exciting android games!! Compete, survive and emerge victorious to earn exciting rewards worth 2k."
     },
-    {
-        id:"creativeslam",
-        name: "Creative Slam",
-        date: "2017-03-25",
-        contact1:"7209388127",
-        contact2:"7800161372",
-        time: "10:00",
-        location: "CC3",
-        prize: "2200",
-        organiser: "Rohan Chaudhary",
-        coorganiser: "Atul Sinha",
-        short_desc: "Blend the given creative elements to create a masterpiece of digital art, and win cash prizes worth Rs 2200 ! ",
-        desc: "The participants shall be provided with a set of visual entities \n(totally unrelated to each other), and are required to create a poster with the use of maximum elements effectively. Judging will be based on the quality and number of images used in your poster!\nSo, Register Now And Let Your Creativity dol the talking for you !\nRegister Here : http:\/\/bit.ly\/2mI9jYc"
-    },
+//     {
+//         id:"creativeslam",
+//         name: "Creative Slam",
+//         date: "2017-03-25",
+//         contact1:"7209388127",
+//         contact2:"7800161372",
+//         time: "10:00",
+//         location: "CC3",
+//         prize: "2200",
+//         organiser: "Rohan Chaudhary",
+//         coorganiser: "Atul Sinha",
+//         short_desc: "Blend the given creative elements to create a masterpiece of digital art, and win cash prizes worth Rs 2200 ! ",
+//         desc: "The participants shall be provided with a set of visual entities \n(totally unrelated to each other), and are required to create a poster with the use of maximum elements effectively. Judging will be based on the quality and number of images used in your poster!\nSo, Register Now And Let Your Creativity dol the talking for you !\nRegister Here : http:\/\/bit.ly\/2mI9jYc"
+//     },
     
     // {
     //     name: "CodeQueen",
@@ -308,18 +308,19 @@ var generalEvents = [
         short_desc: "Do your fingers run faster than your mind ? If yes then for you guys Aproksha'17 presents Qwerty Wars a typing compitition.",
         desc: "QWERTY WAR is the sequel to the typing test. it features the ability to create and save costumed word lists.\nThe typing game allows for the creation of custom word lists. This is useful for those that wish to incorporate noon English words or slang terms. This typing game is a very effective educational tool. This game will never go crazy, are that tough and dedicated.Try out your endurance in this game..\nSo you have chance ! \nWant to be crowned the next Legend . \nFight your way through three rounds of extreme typing to claim the crown."
     },
-    // {
-    //     name: "Mr. Googler",
-    //     date: "2017-03-25",
-    //     contact1: "8896733935",
-    //     time: "19:00",
-    //     location: "CC3-LAB",
-    //     prize: "1500",
-    //     organiser: "Mrityunjay Chaudhary",
-    //     coorganiser: "Garima Gupta,Upasana Singh",
-    //     short_desc: "Tests your skill at googling",
-    //     desc: "Think you've got what it takes to Google your way out of intriguing scenarios? We've got just the event for you avid Googlers.\nSearch, think, disseminate, search again, until you find what it takes to get you to the prizes worth INR 1500.Show your Googling skill.\nQuestions will be subjective.You can form team with maximum two members."
-    // },
+    {
+        id: "googler",
+        name: "Mr. Googler",
+        date: "2017-03-25",
+        contact1: "8896733935",
+        time: "19:00",
+        location: "CC3-LAB",
+        prize: "1500",
+        organiser: "Mrityunjay Chaudhary",
+        coorganiser: "Garima Gupta,Upasana Singh",
+        short_desc: "Tests your skill at googling",
+        desc: "Think you've got what it takes to Google your way out of intriguing scenarios? We've got just the event for you avid Googlers.\nSearch, think, disseminate, search again, until you find what it takes to get you to the prizes worth INR 1500.Show your Googling skill.\nQuestions will be subjective.You can form team with maximum two members."
+    },
     // {
     //     name: "PosterMania",
     //     date: "2017-03-25",
@@ -353,29 +354,30 @@ var generalEvents = [
     //     short_desc: "Famous on-campus treasure cum scavenging hunt is back.",
     //     desc: "\"The treasure awaits you only if you search for it\".\n\nThe Treasure Hunt ensures that you enjoy running around the college in search of clues. Wherever the clues will be you will search them, find them and open the way to the final treasure.\n\nPrizes worth Rs. 3000 to be won! Participation in teams of 3."
     // },
-    // {
-    //     id:"technohive",
-    //     name: "Technohive",
-    //     date: "2017-03-24",
-    //     time: "15:00",
-    //     location: "cc3",
-    //     prize: "3000",
-    //     organiser: "Harsha Vardhan - IEC2014042",
-    //     coorganiser: "Rachit parashar",
-    //     short_desc: " It is an event which tests your basic electronics\/coding skills for ECE\/IT students and general intelligence for everyone",
-    //     desc: "1.\tFirst round : we are conducting separate test for ECE and IT people. For ECE participants, a circuit will be given to make on bread board. FOR IT you will be given a simple code. You have to find the errors\n2.\tSecond round : This is a common round for both IT and ECE people. This is a rapidfire round. Participants will have 60 seconds to answer the questions. No. of correct answers will be the basis of judgement. General question will be given. "
-    // },
-    // {
-    //     name: "Creative Slam",
-    //     date: "2017-03-26",
-    //     time: "10:00",
-    //     location: "CC3",
-    //     prize: "2200",
-    //     organiser: "Rohan Chaudhary",
-    //     coorganiser: "Atul Sinha",
-    //     short_desc: "Blend the given creative elements to create a masterpiece of digital art, and win cash prizes worth Rs 2200 ! ",
-    //     desc: "The participants shall be provided with a set of visual entities \n(totally unrelated to each other), and are required to create a poster with the use of maximum elements effectively. Judging will be based on the quality and number of images used in your poster!\nSo, Register Now And Let Your Creativity do the talking for you !\nRegister Here : http:\/\/bit.ly\/2mI9jYc\nFor further information, Please Contact : \nRohan : 7800161372\nAtul : 7061440715"
-    // },
+    {
+        id:"technohive",
+        name: "Technohive",
+        date: "2017-03-24",
+        time: "15:00",
+        location: "cc3",
+        prize: "3000",
+        organiser: "Harsha Vardhan - IEC2014042",
+        coorganiser: "Rachit parashar",
+        short_desc: " It is an event which tests your basic electronics\/coding skills for ECE\/IT students and general intelligence for everyone",
+        desc: "1.\tFirst round : we are conducting separate test for ECE and IT people. For ECE participants, a circuit will be given to make on bread board. FOR IT you will be given a simple code. You have to find the errors\n2.\tSecond round : This is a common round for both IT and ECE people. This is a rapidfire round. Participants will have 60 seconds to answer the questions. No. of correct answers will be the basis of judgement. General question will be given. "
+    },
+    {
+        id: "creativeslam",
+        name: "Creative Slam",
+        date: "2017-03-26",
+        time: "10:00",
+        location: "CC3",
+        prize: "2200",
+        organiser: "Rohan Chaudhary",
+        coorganiser: "Atul Sinha",
+        short_desc: "Blend the given creative elements to create a masterpiece of digital art, and win cash prizes worth Rs 2200 ! ",
+        desc: "The participants shall be provided with a set of visual entities \n(totally unrelated to each other), and are required to create a poster with the use of maximum elements effectively. Judging will be based on the quality and number of images used in your poster!\nSo, Register Now And Let Your Creativity do the talking for you !\nRegister Here : http:\/\/bit.ly\/2mI9jYc\nFor further information, Please Contact : \nRohan : 7800161372\nAtul : 7061440715"
+    },
     {
         id:"wolfof2311",
         name: "WOLF OF 2311",
@@ -390,30 +392,31 @@ var generalEvents = [
         short_desc: "A Hardware Design Competition open for both IT and ECE students.",
         desc: "Round 1 (Elimination and screening round) :\n1. There will be 20 MCQ's based on basic IT, electronics, decision making and aptitude skills.\n2. There will be some leniency and appreciation for participation by first year students.\n\nRound 2 (Building a cost effective hardware design) :\nEach team has to build a bread-board circuit using the least amount of virtual money in limited amount of time."
     },
-    // {
-
-    //     name: "Pro Arduino",
-    //     date: "2017-03-25",
-    //     contact1:"09441055692",
-    //     time: "00:00",
-    //     location: "Online Event Venue: circuits.io",
-    //     prize: "3000",
-    //     organiser: "Amit Kumar",
-    //     coorganiser: "Shivam Singh",
-    //     short_desc: "A 24 hr online hands-on event to design circuits and program them using Arduino IDE.",
-    //     desc: "This is a 24 hr online hands-on event where the participants are requited to design the circuits and program them using Arduino IDE to perform simple real life tasks. The event will be conducted on circuits.io. Exciting prizes and goodies are waiting to be won."
-    // },
-    // {
-    //     name: "Lang Challenge",
-    //     date: "2017-03-26",
-    //     time: "12:00",
-    //     location: "CC3 Lab",
-    //     prize: "450",
-    //     organiser: "MUBARIS HASSAN",
-    //     coorganiser: "ASHWIN AISHVARYA VARDHAN",
-    //     short_desc: "Solve problems in random programming language.",
-    //     desc: "A random language will be provided and tutorials relevant to this language will be provided. Candidates will be required to solve a set of problems within particular time interval."
-    // },
+    {
+        id: "pro",
+        name: "Pro Arduino",
+        date: "2017-03-25",
+        contact1:"09441055692",
+        time: "00:00",
+        location: "Online Event Venue: circuits.io",
+        prize: "3000",
+        organiser: "Amit Kumar",
+        coorganiser: "Shivam Singh",
+        short_desc: "A 24 hr online hands-on event to design circuits and program them using Arduino IDE.",
+        desc: "This is a 24 hr online hands-on event where the participants are requited to design the circuits and program them using Arduino IDE to perform simple real life tasks. The event will be conducted on circuits.io. Exciting prizes and goodies are waiting to be won."
+    },
+    {
+        id :"lan",
+        name: "Lang Challenge",
+        date: "2017-03-26",
+        time: "12:00",
+        location: "CC3 Lab",
+        prize: "450",
+        organiser: "MUBARIS HASSAN",
+        coorganiser: "ASHWIN AISHVARYA VARDHAN",
+        short_desc: "Solve problems in random programming language.",
+        desc: "A random language will be provided and tutorials relevant to this language will be provided. Candidates will be required to solve a set of problems within particular time interval."
+    },
     // {
        
     //     name: "Technofault",
