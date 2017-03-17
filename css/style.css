@@ -918,6 +918,9 @@ li.system-menu > a {
   cursor: pointer;
 }
 
+.window-content .grid-talk .btn1{
+  opacity: 1;
+}
 
 .window .window-content .grid-item--width2 {
   background: purple;
@@ -930,6 +933,58 @@ li.system-menu > a {
   width: 340px;
   height: 340px;
 }
+
+.window .window-content .grid-talk .btn1{
+  opacity: 1;
+  top:initial;
+  bottom: 0px;
+}
+
+.window .window-content .grid-item .btn1:hover{
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  cursor: pointer;
+}
+
+.window .window-content .grid-talk {
+  background: orange;
+  width: 300px;
+  height: 300px;
+}
+
+.window .window-content .grid-talk .poster{
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  width: 100%;
+  height:0%;
+  transition: .5s;
+}
+
+.window .window-content .grid-talk .spkr{
+  height: 100%;
+  transition: .3s;
+}
+
+.window .window-content .grid-talk--large .spkr{
+  height: 0%;
+  opacity: 0;
+}
+
+.window .window-content .grid-talk--large{
+  width: 424px;
+  height: 600px;
+}
+
+.window .window-content .grid-talk--large .btn1{
+    opacity: 0;
+}
+
+.window .window-content .grid-talk--large .poster{
+  opacity: 1;
+  height: 100%;
+}
+
 
 .window .window-content .grid-item--large .desc{
   opacity: 1;

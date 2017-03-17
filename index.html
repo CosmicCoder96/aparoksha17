@@ -629,7 +629,6 @@
             </div>
 
 
-            
 
         </div>
         <!-- <div class="window finder window-closed" id="finder">
@@ -808,7 +807,7 @@
                                       </svg>
                                     </button>
                         </div>
-                        <!--          <div class="btn-group">
+                        <!          <div class="btn-group">
                                 <button class="btn">
                                   <svg class="icon icon-sort-by">
                                     <use xlink:href="#icon-sort-by"></use>
@@ -1227,6 +1226,31 @@
             </div>
         </div>
         <!-- |||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="window window-closed" id="letstalk">
+                <div class="window-content grid" style="background: transparent; position: relative; height: 0px;" id="talks">
+                <br><br>
+                <div class="gutter-sizer"></div>
+                    <div class="grid-item grid-talk"> <img class="spkr" onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
+                            style="transition-duration: 0.4s; transition-delay: 0.0479319s; filter: grayscale(0); transform: scale(1);"
+                            src="images/talks/ankit.jpg">
+                        <img class="poster" src="images/talks/1.jpg">
+                            <div class="btn1"><b> Ankit Agarwal </b></div>
+                    </div>
+                    <div class="grid-item grid-talk"> <img class="spkr" onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
+                            style="transition-duration: 0.4s; transition-delay: 0.0479319s; filter: grayscale(0); transform: scale(1);"
+                            src="images/talks/anand.jpg">
+                        <img class="poster" src="images/talks/2.jpg">
+                            <div class="btn1"><b> Anand Balachandran Pillai </b></div>
+                    </div>
+                    <div class="grid-item grid-talk"> <img class="spkr" onmouseover="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(0)&quot;" onmouseleave="this.style[&quot;-webkit-filter&quot;]=&quot;grayscale(1)&quot;"
+                            style="transition-duration: 0.4s; transition-delay: 0.0479319s; filter: grayscale(0); transform: scale(1);"
+                            src="images/talks/suchit.jpg">
+                        <img class="poster" src="images/talks/3.jpg">
+                            <div class="btn1"><b> Suchit Puri </b></div>
+                    </div>
+            </div>
+        </div>
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||| -->
         <div class="window photos window-closed hide-status-bar" id="photos">
             <div class="window-header">
                 <div class="window-actions combined-actions">
@@ -1371,7 +1395,7 @@
                 <!--</a>-->
                 <!--</li>-->
                 <li class="app">
-                    <a href="#talks">
+                    <a href="#letstalk">
                         <span class="app-icon"><img src="./images/icons/talks.png" alt="TextEdit App Icon"/></span>
                         <span class="app-title">Talks</span>
                     </a>
@@ -1993,8 +2017,15 @@ $.each(generalEvents, function(index, event)
 
             $grid.on('click', '.grid-item', function(event) {
                 // change size of item by toggling large class
+                console.log(event);
                 $('.grid-item').removeClass('grid-item--large');
-                $(event.currentTarget).toggleClass('grid-item--large');
+                // $('.grid-talk').removeClass('grid-talk--large');
+                if(event.currentTarget.classList.contains('grid-talk')){
+                    console.log('yes');
+                    $(event.currentTarget).toggleClass('grid-talk--large');
+                }
+                else
+                    $(event.currentTarget).toggleClass('grid-item--large');
                 // trigger layout after item size changes
                 setTimeout(function() {
                     $grid.packery('layout');
