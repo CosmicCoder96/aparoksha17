@@ -153,7 +153,7 @@ var generalEvents = [
     {
         id : "poster",
         name: "PosterMania",
-        date: "2017-03-24",
+        date: "2017-03-25",
         contact1: "9918992179",
         contact2: "9028587407",
         time: "20:00",
