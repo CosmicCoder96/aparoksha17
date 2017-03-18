@@ -58,11 +58,11 @@ var flagshipEvents = [{
     {
         id: 'topbot',
         name: 'Top-Bot',
-        organiser: 'Abhishek Deora',
-        coorganiser: 'Sahil Hindwani',
+        organiser: 'Rajeev Dixit',
+        coorganiser: 'Somendra Agarawal',
         date: '23-25 March 17',
         location: 'IIITA',
-        desc: 'Aparoksha presents to you TopBot, a two round robot building contest. Call it a test of all the features of your bot, viz. mechanical, electronics and coding.This is the flagship event in electronics so you just can’t afford to miss this one out. This year, two interesting themes await you. Bolt, an obstacle evading contest will require your bot to overcome all the hindrances put in front of it in order to stand above the rest. The second theme Jarvis is a restricted contest only for first and second year students based on the line follower theme. So come in, show your engineering prowess and grab hold of the various prizes up for grabs.',
+        desc: 'Please visit : https://topbot2017.github.io/',
         short_desc: 'TopBot, a two round robot building contest. Call it a test of all the features of your bot, viz. mechanical, electronics and coding.'
         
     },
