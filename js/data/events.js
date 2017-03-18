@@ -6,9 +6,9 @@ var flagshipEvents = [{
     date: '23-25 March 17',
     location: 'IIITA',
     desc: 'Alkhwarizm is the annual coding event of IIIT’s Techfest Aparoksha. It is a prestigious \
-programming contest which brings you an opportunity to unleash your coding skills and solve \
-algorithmic problems. It is the place where optimization and proficiency matters, skills matter, hard \
-work matters, trying till the very end matters and winning loads of cash prizes matter !',
+    programming contest which brings you an opportunity to unleash your coding skills and solve \
+    algorithmic problems. It is the place where optimization and proficiency matters, skills matter, hard \
+    work matters, trying till the very end matters and winning loads of cash prizes matter !',
     short_desc: 'a prestigious programming contest which brings you an opportunity to unleash your coding skills and solve algorithmic problems '
     },
     {
@@ -78,13 +78,16 @@ work matters, trying till the very end matters and winning loads of cash prizes 
     },
     {
         id: 'treasure_hunt',
-        name: 'Treasure Hunt',
-        organiser: 'Abhishek Deora',
-        coorganiser: 'Sahil Hindwani',
-        date: '23 March 17',
-        location: 'CC3',
-        desc: 'Think you can solve any puzzle, have a penchant for riddles. Here\'s a chance to prove it. Presenting you Treasure Hunt, the Annual Treasure Hunt, better than ever before .',
-        short_desc: 'Presenting you Treasure Hunt, the Annual Treasure Hunt, better than ever before .'
+        name: "Treasure Hunt",
+        date: "2017-03-23",
+        time: "22:00",
+        location: "Campus",
+        prize: "3000",
+        organiser: "Abhishek Nandan",
+        coorganiser: "Prabhat Singh, Akash Kumar",
+        short_desc: "Famous on-campus treasure cum scavenging hunt is back.",
+        desc: "\"The treasure awaits you only if you search for it\".\n\nThe Treasure Hunt ensures that you enjoy running around the college in search of clues. Wherever the clues will be you will search them, find them and open the way to the final treasure.\n\nPrizes worth Rs. 3000 to be won! Participation in teams of 3."
+   
     },
     {
         id: 'ctf',
@@ -108,16 +111,17 @@ work matters, trying till the very end matters and winning loads of cash prizes 
     },
     {
         id: 'three',
-        name : "Three Musketeers",
-        date : "2017-03-24",
-        time : "15:00",
-        location : "IIIT Allahabad",
-        prize : "4500",
-        organiser : "Priyanshu Kumar",
-        coorganiser : "Shiv Dhingra",
-        short_desc : "Can you complete your teammate's incomplete code??? Give  it a try at this exciting event Three Musketeers.",
-        desc : "Come and compete in the most exciting event of Aparoksha '17.\nWe know, you can code.\nBut the question is can you do it with your team?\nParticipate with 2 other musketeers and complete each others incomplete code to win exciting prizes worth Rs 4500\/-.\nSo are you ready ?"
+        name: "Three Musketeers",
+        date: "2017-03-25",
+        time: "15:00",
+        location: "IIIT Allahabad",
+        prize: "4500",
+        organiser: "Priyanshu Kumar",
+        coorganiser: "Shiv Dhingra",
+        short_desc: "Participate with 2 other musketeers and complete each others incomplete code to win exciting prizes worth Rs 4500\/-.",
+        desc: "Come and compete in the most exciting event of Aparoksha '17.\nWe know, you can code.\nBut the question is can you do it with your team?\nParticipate with 2 other musketeers and complete each others incomplete code to win exciting prizes worth Rs 4500\/-.\nSo are you ready ?\nBasically all the 3 musketeers will be allotted 3 different Computers with 3 different questions. Each participant will be given 10-15 minutes of time on each Computer to write the code and then there positions will be swapped . You have to continue on your teammate's Desktop and complete the the code from wherever he\/she left.\nWait for the surprise part.\nMay the best team win !!"
     },
+
     {
         id: 'stegolica',
         name: 'Stegolica',
@@ -127,6 +131,20 @@ work matters, trying till the very end matters and winning loads of cash prizes 
         location: 'CC3',
         desc: 'A delight for all the aspiring hackers and crackers , Stegolica is an online Steganography competition which has one of the most toughest competitors trying to prove themselves. Participate and bring out the Alan Turing inside out you. Steganography is the practice of concealing a file,message,image or video within another file,message,image or video. In every question there will be something hidden (a key) and you have to find out what it is, To go to the next level ',
         short_desc: 'Stegolica is an online Steganography competition which has one of the most toughest competitors trying to prove themselves.'
+    },
+     {
+        id : "codequeen",
+        name: "CodeQueen",
+        date: "",
+        contact1:"9794172297",
+        contact2:"8127698451",
+        time: "",
+        location: "IIIT Allahabad",
+        prize: "3000",
+        organiser: "Supriti",
+        coorganiser: "Shelly",
+        short_desc: "Coding contest only for girls",
+        desc: "Coding contest being held only for girls. They can participate individually or in a team of 2.The duration is 3 hours and it is an onsite event.\n"
     }
 ];
 
@@ -146,26 +164,13 @@ var generalEvents = [
         short_desc: "Digital Design Competition",
         desc: " \u201cAll the problems of the world could be settled easily if men were only willing to think.\u201d But, thinking is often the hardest work of all. As Aparoksha'17 revives the design culture, it is important that we embrace thinking as well as making. So put on your creative hats for the biggest design competition of Aparoksha. 90 minutes is all you have, and sky is the limit. Create something magical!"
     },
-//     {
-//         id :"lan",
-//         name: "Lang Challenge",
-//         date: "2017-03-25",
-//         contact1: "9895503662",
-//         contact2: "8604616966",
-//         time: "12:00",
-//         location: "CC3",
-//         prize: "4500",
-//         organiser: "Mubaris Hassan",
-//         coorganiser: "Ashwin Aishvarya Vardhan",
-//         short_desc: "Solve problems in random programming language.",
-//         desc: "A random language will be provided and tutorials relevant to this language will be provided. Candidates will be required to solve a set of problems within particular time interval.\n"
-//     },
+
     {
         id:"electrobuzz",
         name: "ELectroBuzz",
         date: "2017-03-25",
         contact1: "8052896807",
-        time: "",
+        time: "Contact organiser",
         location: "CC3",
         prize: "3000",
         organiser: "Naveen Kewalramani and Pradeep ",
@@ -173,33 +178,7 @@ var generalEvents = [
         short_desc: "This Event will be based on IC\u2019s(IC 741 & IC 555) with simple circuits .This enthralling event is an excellent platform to prove your skills and brain in this field.analyze the Circuit and find the faulty Connections of the circuits.",
         desc: ""
     },
-//     {
-//         id:"googler",
-//         name: "Mr. Googler",
-//         date: "2017-03-24",
-//         contact1: "8896733935",
-//         time: "21:00",
-//         location: "CC3-LAB",
-//         prize: "1500",
-//         organiser: "Mritunjay Chaudhary",
-//         coorganiser: "Garima Gupta,Upasana Singh",
-//         short_desc: "Tests your skill at googling",
-//         desc: "Think you've got what it takes to Google your way out of intriguing scenarios? We've got just the event for you avid Googlers.\nSearch, think, disseminate, search again, until you find what it takes to get you to the prizes worth INR 1500.Show your Googling skill.\nQuestions will be subjective.\nYou can form team with maximum two members."
-//     },
-//     {
-//         id: "technohive",
-//         name: "Technohive ",
-//         date: "",
-//         contact1:"7839365693",
-//         contact2:"7976761302",
-//         time: "",
-//         location: "cc-3  LAB ",
-//         prize: "3000",
-//         organiser: "Harsha Vardhan Reddy ",
-//         coorganiser: "Rachit Parashar , Himanshul Patel",
-//         short_desc: "it is an event which tests your electronis as well as your coding skills and general knowledge about science(mostly related with electronics).",
-//         desc: "First round- we are going to conduct a separate test for ECE and IT people. For ECE people participants there will be a circuit given to make on bread board and for IT guys a code will be given to them u have to find errors.\n2nd round- common  round ,rapidfire round. participants will have 60 seconds to answer the questions.No. of correct answer will be basis of judgement. General question will be given related with electronics.\nVenue-  CC3\nRules-\n1. There  will be two members in each group.\n2. Tie in any round will be broken by the time of the submits the paper or given task.\n3. Phone ,scientific calculator would not be allowed  at the time of event,if used those team will be disqualified.\n4. You have to bring rough paper and pen for your own convenience.\n5. Teams should be registered before two days of first round. "
-//     },
+
     {
         id:"android",
         name: "Android Gamers' Asylum",
@@ -213,34 +192,9 @@ var generalEvents = [
         short_desc: "Fun Filled Bonanza of the most popular Android Games like Mini Militia",
         desc: "The fun thrilled bonanza of gaming is back !! Flaunt your moves and grooves this Aparoksha in the epic battleground of the most exciting android games!! Compete, survive and emerge victorious to earn exciting rewards worth 2k."
     },
-//     {
-//         id:"creativeslam",
-//         name: "Creative Slam",
-//         date: "2017-03-25",
-//         contact1:"7209388127",
-//         contact2:"7800161372",
-//         time: "10:00",
-//         location: "CC3",
-//         prize: "2200",
-//         organiser: "Rohan Chaudhary",
-//         coorganiser: "Atul Sinha",
-//         short_desc: "Blend the given creative elements to create a masterpiece of digital art, and win cash prizes worth Rs 2200 ! ",
-//         desc: "The participants shall be provided with a set of visual entities \n(totally unrelated to each other), and are required to create a poster with the use of maximum elements effectively. Judging will be based on the quality and number of images used in your poster!\nSo, Register Now And Let Your Creativity dol the talking for you !\nRegister Here : http:\/\/bit.ly\/2mI9jYc"
-//     },
+
     
-    // {
-    //     name: "CodeQueen",
-    //     date: "",
-    //     contact1:"9794172297",
-    //     contact2:"8127698451",
-    //     time: "",
-    //     location: "IIIT Allahabad",
-    //     prize: "3000",
-    //     organiser: "Supriti",
-    //     coorganiser: "Shelly",
-    //     short_desc: "Coding contest only for girls",
-    //     desc: "Coding contest being held only for girls. They can participate individually or in a team of 2.The duration is 3 hours and it is an onsite event.\n"
-    // },
+   
     {
         id:"matathon",
         name: "Matathon",
@@ -255,31 +209,7 @@ var generalEvents = [
         short_desc: "It is a 36 hr online coding based event on the omnipotent developement platform MATLAB. A problem will be uploaded every 8th hr on the portal and the contestants will have to mail their M-file to the organizers.",
         desc: "It is a Matlab coding competition for 36 hours. \n5 Questions will be uploaded(either mailed or uploaded on event page) at 0th , 4th , 12th , 20th , 28th hour.\n1st question would be an easy questions and then the difficulty level would vary accordingly.\nParticipants should submit their Codes (.M file)  to a particular email(would be updated very soon).\nTop 3 Contestants will get exciting prizes."
     },
-    // {
-    //     name: "Treasure Hunt",
-    //     date: "2017-03-23",
-    //     contact1:"9956044639",
-    //     time: "21:00",
-    //     location: "CC3",
-    //     prize: "3000",
-    //     organiser: "Abhishek Nandan ",
-    //     coorganiser: "Prabhat Singh",
-    //     short_desc: "Famous on-campus treasure cum scavenging hunt is back.",
-    //     desc: ""
-    // },
-    // {
-    //     name: "Matathon",
-    //     date: "2017-03-24",
-    //     contact1:"9634708228",
-    //     contact2:"8601867011",
-    //     time: "10:00",
-    //     location: "Online ",
-    //     prize: "3000",
-    //     organiser: "Arunav Bhatnagar",
-    //     coorganiser: "Ram Narayan",
-    //     short_desc: "It is a 36 hr online coding based event on the omnipotent developement platform MATLAB. A problem will be uploaded every 8th hr on the portal and the contestants will have to mail their M-file to the organizers.",
-    //     desc: "It is a Matlab coding competition for 36 hours. \n5 Questions will be uploaded(either mailed or uploaded on event page) at 0th , 4th , 12th , 20th , 28th hour.\n1st question would be an easy questions and then the difficulty level would vary accordingly.\nParticipants should submit their Codes (.M file)  to a particular email(would be updated very soon).\nTop 3 Contestants will get exciting prizes."
-    // },
+
     {
         id:"designoff",
         name: "Design Off",
@@ -321,39 +251,9 @@ var generalEvents = [
         short_desc: "Tests your skill at googling",
         desc: "Think you've got what it takes to Google your way out of intriguing scenarios? We've got just the event for you avid Googlers.\nSearch, think, disseminate, search again, until you find what it takes to get you to the prizes worth INR 1500.Show your Googling skill.\nQuestions will be subjective.You can form team with maximum two members."
     },
-    // {
-    //     name: "PosterMania",
-    //     date: "2017-03-25",
-    //     time: "20:00",
-    //     location: "CC-3 Lab",
-    //     prize: "3000",
-    //     organiser: "Abhishek Sharma",
-    //     coorganiser: "Aditya Powale",
-    //     short_desc: "",
-    //     desc: ""
-    // },
-    // {
-    //     name: "Three Musketeers",
-    //     date: "2017-03-25",
-    //     time: "15:00",
-    //     location: "IIIT Allahabad",
-    //     prize: "4500",
-    //     organiser: "Priyanshu Kumar",
-    //     coorganiser: "Shiv Dhingra",
-    //     short_desc: "Participate with 2 other musketeers and complete each others incomplete code to win exciting prizes worth Rs 4500\/-.",
-    //     desc: "Come and compete in the most exciting event of Aparoksha '17.\nWe know, you can code.\nBut the question is can you do it with your team?\nParticipate with 2 other musketeers and complete each others incomplete code to win exciting prizes worth Rs 4500\/-.\nSo are you ready ?\nBasically all the 3 musketeers will be allotted 3 different Computers with 3 different questions. Each participant will be given 10-15 minutes of time on each Computer to write the code and then there positions will be swapped . You have to continue on your teammate's Desktop and complete the the code from wherever he\/she left.\nWait for the surprise part.\nMay the best team win !!"
-    // },
-    // {
-    //     name: "Treasure Hunt",
-    //     date: "2017-03-23",
-    //     time: "22:00",
-    //     location: "Campus",
-    //     prize: "3000",
-    //     organiser: "Abhishek Nandan",
-    //     coorganiser: "Prabhat Singh, Akash Kumar",
-    //     short_desc: "Famous on-campus treasure cum scavenging hunt is back.",
-    //     desc: "\"The treasure awaits you only if you search for it\".\n\nThe Treasure Hunt ensures that you enjoy running around the college in search of clues. Wherever the clues will be you will search them, find them and open the way to the final treasure.\n\nPrizes worth Rs. 3000 to be won! Participation in teams of 3."
-    // },
+    
+        
+        
     {
         id:"technohive",
         name: "Technohive",
@@ -408,6 +308,8 @@ var generalEvents = [
     {
         id :"lan",
         name: "Lang Challenge",
+        contact1: "9895503662",
+        contact2: "8604616966",
         date: "2017-03-26",
         time: "12:00",
         location: "CC3 Lab",
@@ -417,35 +319,13 @@ var generalEvents = [
         short_desc: "Solve problems in random programming language.",
         desc: "A random language will be provided and tutorials relevant to this language will be provided. Candidates will be required to solve a set of problems within particular time interval."
     },
-    // {
-       
-    //     name: "Technofault",
-    //     date: "2017-03-24",
-    //     contact1:"8687447152",
-    //     contact2:"8127644199",
-    //     time: "14:00",
-    //     location: "CC3",
-    //     prize: "4000",
-    //     organiser: "Ganesh Cheerla,Naga Nikhil,Sushmitha Gayen",
-    //     coorganiser: "",
-    //     short_desc: "A bug in a Silicon chip can be very costly.We can see that by the havoc created by a bug in the Galaxy note 3.'Technofault' is an enthralling event where u need to debug the given circuit\/code and prevent such damage.So come on future engineers,exciting prizes are in store for you!",
-    //     desc: "Technofault has 3 rounds:\nRound 1(Screening Round):It's a written test of 3 sections with questions that test your basics of Analog and Digital electronics.\nSection 1 will have MCQs(single answer type),section 2 will have MCQs(multiple correct choice type) and section 3 will have Integer answer type questions.All sections have 5 questions each.\nNote:Top 3 scorers from each batch will be shortlisted to next round.\nRound 2:In this round a buggy code will be given in 8086 assembly language(C language for the 1st years).Objective is to debug the code and points will be given based on the number of bugs found.\nRound 3:A schematic of a faulty circuit along with the input\/output specifications of the intended correct circuit will be given.Objective is to find the faults and arrange the correct circuit on a bread board to meet the given input\/output specifications.The fastest to complete the objective will be judged as winner.\nNote:Components will be provided by us and only those components must be used."
-    // },
-    // {
-    //     name: "Technofault",
-    //     date: "2017-03-24",
-    //     time: "14:00",
-    //     location: "CC3",
-    //     prize: "4000",
-    //     organiser: "Ganesh Cheerla,Naga Nikhil,Sushmitha Gayen",
-    //     coorganiser: "",
-    //     short_desc: "A bug in a Silicon chip can be very costly.We can see that by the havoc created by a bug in the Galaxy note 3.'Technofault' is an enthralling event where u need to debug the given circuit\/code and prevent such damage.So come on future engineers,exciting prizes are in store for you!",
-    //     desc: "Round 1:It's a written test of 3 sections(questions from analog\/digital electronics.)\nTop 3 from each batch will be shortlisted for next round.\nRound 2:A schematic of a faulty circuit along with the input\/output specifications of the intended correct circuit will be given.Objective is to find the faults and arrange the correct circuit on a bread board to meet the given input\/output specifications."
-    // },
+
     {
         id:"technofault",
         name: "Technofault",
         date: "2017-03-24",
+        contact1:"8687447152",
+        contact2:"8127644199",
         time: "14:00",
         location: "CC3",
         prize: "",
@@ -454,30 +334,7 @@ var generalEvents = [
         short_desc: "A bug in a Silicon chip can be very costly.We can see that by the havoc created by a bug in the Galaxy note 7.'Technofault' is an enthralling event where u need to debug the given circuit\/code and prevent such damage.So come on future engineers,exciting prizes are in store for you!",
         desc: "Round 1:It's a written test of 3 sections(questions from Analog\/Digital electronics.)\nTop 3 from each batch will be shortlisted for next round.\nRound 2:A schematic of a faulty circuit along with the input\/output specifications of the intended correct circuit will be given.Objective is to find the faults and arrange the correct circuit on a bread board to meet the given input\/output specifications."
     },
-    // {
-        
-    //     name: "BIOMEDA",
-    //     date: "2017-03-24",
-    //     contact1:"8542078059",
-    //     time: "11:00",
-    //     location: "CC3 ",
-    //     prize: "3000",
-    //     organiser: "Garima Gupta",
-    //     coorganiser: "Deepak Sonker",
-    //     short_desc: "Biomeda is the signature event of applied sciences which will test knowledge of bio-engineering.",
-    //     desc: "This event  will have two rounds.The first round will be a quiz round which will have questions from  electronics,general aptitude ,bio-medical application ,programming ,mathematics  and biology .total time :45 min,Total question -50 ,Negative marking - 1\/3.The second round will be a buzzer round in which questions regarding  biomedical field will be asked.This round  may also contain  audio visual type questions.Minus marking -1\/2.\n"
-    // },
-    // {
-    //     name: "BIOMEDA",
-    //     date: "2017-03-24",
-    //     time: "11:00",
-    //     location: "CC3 ",
-    //     prize: "3000",
-    //     organiser: "Garima Gupta",
-    //     coorganiser: "Deepak Sonker",
-    //     short_desc: "Biomeda is the signature event of applied sciences which will test knowledge of bio-engineering.",
-    //     desc: "This event  will have two rounds.The first round will be a quiz round which will have questions from  electronics,general aptitude ,bio-medical application ,programming ,mathematics  and biology .total time :45 min,Total question -50 ,Negative marking - 1\/3.The second round will be a buzzer round in which questions regarding  biomedical field will be asked.This round  may also contain  audio visual type questions.Minus marking -1\/2.\n"
-    // },
+ 
     {
         id:"biomeda",
         name: "BIOMEDA",
