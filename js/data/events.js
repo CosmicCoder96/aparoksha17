@@ -339,6 +339,7 @@ var generalEvents = [
         id:"biomeda",
         name: "BIOMEDA",
         date: "2017-03-24",
+        contact1:"8542078059",
         time: "11:00",
         location: "CC3 ",
         prize: "3000",
