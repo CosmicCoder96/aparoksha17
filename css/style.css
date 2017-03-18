@@ -929,6 +929,7 @@ li.system-menu > a {
 }
 
 .window .window-content .grid-item--large{
+  box-shadow: 0px 0px 2px 2px white;
   background: orange;
   width: 340px;
   height: 340px;
