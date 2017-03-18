@@ -2496,6 +2496,7 @@ body {
   float: left;
 }
 .spinner p {
+  z-index:11;
   position: absolute;
   top: 50%;
   width: 100%;
@@ -2567,6 +2568,7 @@ body {
 }
 
 .spinner-content img {
+  z-index:10;
   width: 19em;
   height: 19em;
   border-radius: 19em;
