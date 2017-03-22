@@ -1,8 +1,8 @@
 var flagshipEvents = [{
     id: 'alkhwarizm',
     name: 'Alkhwarizm',
-    organiser: 'Abhishek Deora',
-    coorganiser: 'Sahil Hindwani',
+    organiser: 'Shivam Garg',
+    coorganiser: 'Ankit Rao',
     date: '23-25 March 17',
     location: 'IIITA',
     desc: 'Alkhwarizm is the annual coding event of IIIT’s Techfest Aparoksha. It is a prestigious \
@@ -339,6 +339,7 @@ var generalEvents = [
         id:"biomeda",
         name: "BIOMEDA",
         date: "2017-03-24",
+        contact1:"8542078059",
         time: "11:00",
         location: "CC3 ",
         prize: "3000",
