@@ -205,9 +205,9 @@ var generalEvents = [
         location: "Online ",
         prize: "3000",
         organiser: "Arunav Bhatnagar",
-        coorganiser: "Ram Narayan",
-        short_desc: "It is a 36 hr online coding based event on the omnipotent developement platform MATLAB. A problem will be uploaded every 8th hr on the portal and the contestants will have to mail their M-file to the organizers.",
-        desc: "It is a Matlab coding competition for 36 hours. \n5 Questions will be uploaded(either mailed or uploaded on event page) at 0th , 4th , 12th , 20th , 28th hour.\n1st question would be an easy questions and then the difficulty level would vary accordingly.\nParticipants should submit their Codes (.M file)  to a particular email(would be updated very soon).\nTop 3 Contestants will get exciting prizes."
+        coorganiser: "Ram Narayan Mishra",
+        short_desc: "36 hr long Online Matlab Programming Event",
+        desc: "It is a Matlab coding competition for 36 hours consisting of EIGHT Questions , which will be uploaded EVERY 4TH HOUR . Difficulty of Questions would vary accordingly.\nParticipants have to submit their Codes (.M file) on https:\/\/matathon2017.github.io\/Question.html .\nFor More Info regarding Matathon stay tuned to https:\/\/goo.gl\/NT8mEl & https:\/\/matathon2017.github.io\/index.html"
     },
 
     {
