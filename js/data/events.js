@@ -38,7 +38,7 @@ var flagshipEvents = [{
         name: 'Humblefoolcup',
         organiser: 'Abhishek Deora',
         coorganiser: 'Sahil Hindwani',
-        date: '23-25 March 17',
+        date: '25 March 17',
         location: 'Topcoder',
         desc: 'Topcoder in collaboration with Indian Institute of Information Technology Allahabad is excited to announce Humblefool Cup Algorithm Match in the fond memory of Harsha Suryanarayana (humblefool), one of the best Programmer of India.',
         short_desc: 'Humblefool Cup is a prestigious Algorithm Match in the fond memory of Harsha Suryanarayana (humblefool), one of the best Programmer of India. '
