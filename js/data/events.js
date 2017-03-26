@@ -192,6 +192,20 @@ var generalEvents = [
         short_desc: "Fun Filled Bonanza of the most popular Android Games like Mini Militia",
         desc: "The fun thrilled bonanza of gaming is back !! Flaunt your moves and grooves this Aparoksha in the epic battleground of the most exciting android games!! Compete, survive and emerge victorious to earn exciting rewards worth 2k."
     },
+    {
+        id:"fifa",
+        name: "FIFA 15\/17",
+        date: "2017-03-24",
+        time: "18:00",
+        loc: "Main ground",
+        prize: "3000",
+        organiser: "Subham choudhury",
+        corganiser: "",
+        contact1 :"",
+        contact2 :"",
+        short_desc: "FIFA event with betting",
+        desc: "FIFA event with betting and UCL\/UEL tournaments"
+    },
 
     
    
